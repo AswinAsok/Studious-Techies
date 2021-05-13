@@ -6,13 +6,17 @@ import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
 import logo from "../Images/LandingLogo.svg";
+import {
+  BrowserRouter as Router,
+  Link
+} from "react-router-dom";
 
 import "./Landing.css";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    backgroundColor: "#0FFF95",
-    height: "8.5vh",
+    backgroundColor: "#6effc0",
+    height: "4rem",
   },
 }));
 
@@ -25,11 +29,12 @@ const Landing = () => {
           <Toolbar>
             <Grid
               container
-              direction="row"
+              direction="column"
               justify="center"
               alignItems="center"
             >
-              <p className="nav-text">Studious-Techies</p>
+              <div className="nav-text">Studious-Techies</div>
+              <div className="nav-textdown">- By Aswin Asok -</div>
             </Grid>
           </Toolbar>
         </AppBar>
@@ -45,8 +50,8 @@ const Landing = () => {
             </p>
           </div>
           <div className="buttons">
-            <button className="logbtns">Sign Up</button>
-            <button className="logbtns"> Login</button>
+            <Link to="/signup"><button className="logbtns">Sign Up</button></Link>
+            <Link to="/login"><button className="logbtns">Login</button></Link>
           </div>
           
         </Grid>

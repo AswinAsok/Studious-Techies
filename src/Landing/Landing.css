@@ -3,6 +3,11 @@
   color: #2b2d42;
   font-weight: 600;
 }
+.nav-textdown{
+    color: #2b2d42;
+    font-weight: 600;
+    font-size: 0.75rem;
+}
 
 .logo-container {
 text-align: center;
@@ -17,7 +22,7 @@ margin-top: 15vh;
 }
 
 .logbtns{
-    background-color: #0FFF95;
+    background-color: #6effc0;
     border: none;
     margin: 0.25rem;
     padding: 0.74rem;
