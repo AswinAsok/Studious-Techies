@@ -1,5 +1,32 @@
-.nav-text{
-    font-size: 1.55rem;
-    color: #2B2D42;
-    font-weight: 600;
+.nav-text {
+  font-size: 1.55rem;
+  color: #2b2d42;
+  font-weight: 600;
 }
+
+.logo-container {
+text-align: center;
+margin-top: 15vh;
+}
+
+.logo {
+  min-height: 26vh;
+  max-height: 40vh;
+  width: 90vw;
+  
+}
+
+.logbtns{
+    background-color: #0FFF95;
+    border: none;
+    margin: 0.25rem;
+    padding: 0.74rem;
+    width: 6rem;
+    margin-top: 0.5rem;
+    font-size: 1.05rem;
+    font-weight: 600;
+    border-radius: 10px;
+    color: #2b2d42;
+
+}
+
