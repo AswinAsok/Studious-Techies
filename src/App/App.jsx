@@ -1,9 +1,10 @@
+import Landing from '../Landing/Landing';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      Studious Techies
+      <Landing/>
     </div>
   );
 }
