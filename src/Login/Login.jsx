@@ -1,14 +1,49 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Login.css";
 import Grid from "@material-ui/core/Grid";
+import back from "../Images/Back.png";
+import { Link } from "react-router-dom";
 
 const Login = () => {
+  const [time, setTime] = useState(
+    new Date().getHours() +
+      ":" +
+      ((new Date().getMinutes() < 10 ? "0" : "") + new Date().getMinutes())
+  );
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTime(
+        new Date().getHours() +
+          ":" +
+          ((new Date().getMinutes() < 10 ? "0" : "") + new Date().getMinutes())
+      );
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, [time]);
+
   return (
     <div className="login-container">
       <div className="login-box">
         <Grid container direction="column" justify="center" alignItems="center">
-          <div className="login-header">
-            <div className="header">Studious-Techies</div>
+          <div className="login-headercontainer">
+            <Grid
+              container
+              direction="row"
+              justify="space-between"
+              alignItems="center"
+            >
+              <div className="goback">
+                <Link to="/">
+                  <img className="goback" src={back} alt="" />
+                </Link>
+              </div>
+              <div className="login-header">
+                <div className="header">Studious-Techies</div>
+              </div>
+              <div className="time">{time}</div>
+            </Grid>
           </div>
 
           <div className="forms">
@@ -24,6 +59,20 @@ const Login = () => {
 
             <div className="sbtn">
               <button className="login-button">Login</button>
+            </div>
+
+            <div className="general">
+              <Grid
+                container
+                direction="row"
+                justify="center"
+                alignItems="center"
+              >
+                <div className="general-texttwo">Forgot Password ?</div>
+                <Link to="/signup">
+                  <div className="general-textone">Don't have a Account?</div>
+                </Link>
+              </Grid>
             </div>
           </div>
         </Grid>

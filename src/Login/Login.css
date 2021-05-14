@@ -8,8 +8,8 @@
 
 .login-box {
   background-color: #6effc0;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   border-radius: 15px;
   padding-bottom: 3rem;
   min-height: 60vh;
@@ -28,7 +28,7 @@
   margin-top: 1rem;
 }
 
-.forms{
+.forms {
   margin-top: 3rem;
   display: flex;
   flex-direction: column;
@@ -72,3 +72,24 @@
   border-radius: 10px;
   height: 3rem;
 }
+
+.general-textone,
+.general-texttwo {
+  color: #2b2d42;
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+}
+
+.general-textone{
+  margin-left: 0.8rem;
+  
+}
+
+.general-texttwo{
+  margin-right: 0.8rem;
+  text-decoration: underline;
+}
+
+
+
