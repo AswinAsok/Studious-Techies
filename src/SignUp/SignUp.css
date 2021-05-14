@@ -1,0 +1,86 @@
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 96vh;
+}
+
+.signup-box {
+  background-color: #6effc0;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  border-radius: 15px;
+  padding-bottom: 3rem;
+  
+}
+
+.signup-header {
+  background-color: #2b2d42;
+  font-size: 1rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.username,
+.email,
+.password,
+.cpassword,
+.fname {
+  margin-top: 1rem;
+}
+
+.form{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.label{
+    color: #2b2d42;
+    font-weight: bold;
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+}
+
+.input-field {
+  background-color: #2b2d42;
+  border: none;
+  color: #EDF2F4;
+  width: 15rem;
+  height: 1.75rem;
+  border-radius: 6px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 0.75rem;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.02rem;
+}
+
+.sbtn{
+    margin-top: 2rem;
+}
+
+.signup-button{
+    background-color: #2b2d42;
+    color: #6effc0;;
+    border: none;
+    width: 9rem;
+    font-size: 1.25rem;
+    border-radius: 10px;
+    height: 3rem;
+}
+
+.terms{
+    text-align: center;
+    width: 16rem;
+    margin-top: 1rem;
+    color: #2b2d42;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
