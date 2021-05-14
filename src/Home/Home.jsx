@@ -1,12 +1,72 @@
-import React from 'react'
-import './Home.css'
+import React from "react";
+import { makeStyles } from "@material-ui/core/styles";
+import AppBar from "@material-ui/core/AppBar";
+import Toolbar from "@material-ui/core/Toolbar";
+import Grid from "@material-ui/core/Grid";
+import Button from "@material-ui/core/Button";
+import Menu from "@material-ui/core/Menu";
+import MenuItem from "@material-ui/core/MenuItem";
+import "./Home.css";
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    backgroundColor: "#6effc0",
+    height: "4rem",
+  },
+  menu: {
+    "& .MuiPaper-root": {
+      backgroundColor: "#2b2d42"
+    }
+  }
+}));
 
 const Home = () => {
-    return (
-        <div>
-            Welcome to the Home
-        </div>
-    )
-}
+  const [anchorEl, setAnchorEl] = React.useState(null);
 
-export default Home
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
+  const classes = useStyles();
+  return (
+    <div>
+      <div className="nav">
+        <AppBar className={classes.root} position="static">
+          <Toolbar>
+            <Grid container direction="column">
+              <div className="navbar-text">Studious-Techies</div>
+            </Grid>
+            <div>
+              <div>
+                <Button
+                  onClick={handleClick}
+                  className="menu"
+                >
+                  <p className="menu-text">ASWIN ASOK</p>
+                </Button>
+                <Menu
+                  id="simple-menu"
+                  anchorEl={anchorEl}
+                  keepMounted
+                  className={classes.menu}
+                  open={Boolean(anchorEl)}
+                  onClose={handleClose}
+                >
+                  <MenuItem onClick={handleClose}><div className="menu-innertext">Profile</div></MenuItem>
+                  <MenuItem onClick={handleClose}><div className="menu-innertext">My account</div></MenuItem>
+                  <MenuItem onClick={handleClose}><div className="menu-innertext">Logout</div></MenuItem>
+                </Menu>
+              </div>
+            </div>
+          </Toolbar>
+        </AppBar>
+      </div>
+    </div>
+  );
+};
+
+export default Home;

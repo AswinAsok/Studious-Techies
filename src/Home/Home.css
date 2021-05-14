@@ -1,0 +1,15 @@
+.menu-text{
+    width: 7rem;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.menu-innertext{
+    font-weight: bold;
+    color: #6EFFC0;
+}
+
+.navbar-text {
+    font-size: 1.1rem;
+    color: #2b2d42;
+    font-weight: 600;
+  }
