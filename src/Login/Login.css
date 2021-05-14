@@ -13,6 +13,7 @@
   border-radius: 15px;
   padding-bottom: 3rem;
   min-height: 60vh;
+  margin-top: 1rem;
 }
 
 .login-header {
@@ -29,7 +30,7 @@
 }
 
 .forms {
-  margin-top: 3rem;
+  margin-top: 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -78,18 +79,43 @@
   color: #2b2d42;
   font-size: 0.75rem;
   font-weight: bold;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
 }
 
-.general-textone{
+.general-textone {
   margin-left: 0.8rem;
-  
 }
 
-.general-texttwo{
+.general-texttwo {
   margin-right: 0.8rem;
   text-decoration: underline;
 }
 
+.login-options {
+  display: flex;
+  flex-direction: row;
+}
 
+.githublogo,
+.gmaillogo,
+.linkedlnlogo {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
 
+.option-text::before {
+  margin-top: 3rem;
+  content: " ";
+  display: block;
+  border-bottom: 3px solid #2b2d42;
+  margin-bottom: 1rem;
+}
+
+.option-text {
+  margin-top: 1.5rem;
+  width: 17rem;
+  text-align: center;
+}

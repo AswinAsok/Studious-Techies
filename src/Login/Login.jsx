@@ -3,6 +3,9 @@ import "./Login.css";
 import Grid from "@material-ui/core/Grid";
 import back from "../Images/Back.png";
 import { Link } from "react-router-dom";
+import githublogo from "../Images/github 1.png";
+import gmaillogo from "../Images/gmail 1.png";
+import linkedlnlogo from "../Images/linkedin 1.png";
 
 const Login = () => {
   const [time, setTime] = useState(
@@ -73,6 +76,19 @@ const Login = () => {
                   <div className="general-textone">Don't have a Account?</div>
                 </Link>
               </Grid>
+            </div>
+          </div>
+          <div className="line"></div>
+          <div className="option-text"></div>
+          <div className="login-options">
+            <div className="github-logo">
+              <img className="githublogo" src={githublogo} alt="" />
+            </div>
+            <div className="gmail">
+              <img className="githublogo" src={gmaillogo} alt="" />
+            </div>
+            <div className="linkedln">
+              <img className="githublogo" src={linkedlnlogo} alt="" />
             </div>
           </div>
         </Grid>

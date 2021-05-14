@@ -51,7 +51,6 @@ const SignUp = () => {
               <div className="label">Username</div>
               <input value="_aswin_asok_" className="input-field" type="text" />
             </div>
-
             <div className="fname">
               <div className="label">Full Name</div>
               <input value="Aswin Asok" className="input-field" type="text" />
