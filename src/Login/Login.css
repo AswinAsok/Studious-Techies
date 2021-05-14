@@ -69,9 +69,11 @@
   color: #6effc0;
   border: none;
   width: 9rem;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
+  letter-spacing: 0.03rem;
   border-radius: 10px;
   height: 3rem;
+  font-weight: bold;
 }
 
 .general-textone,
@@ -115,6 +117,9 @@
 }
 
 .option-text {
+  color: #2b2d42;
+  font-weight: bold;
+  text-decoration: underline;
   margin-top: 1.5rem;
   width: 17rem;
   text-align: center;

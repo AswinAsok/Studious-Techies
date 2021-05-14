@@ -61,7 +61,9 @@ const Login = () => {
             </div>
 
             <div className="sbtn">
-              <button className="login-button">Login</button>
+              <Link to="/home">
+                <button className="login-button">Login</button>
+              </Link>
             </div>
 
             <div className="general">
@@ -79,7 +81,7 @@ const Login = () => {
             </div>
           </div>
           <div className="line"></div>
-          <div className="option-text"></div>
+          <div className="option-text">Login Using</div>
           <div className="login-options">
             <div className="github-logo">
               <img className="githublogo" src={githublogo} alt="" />
