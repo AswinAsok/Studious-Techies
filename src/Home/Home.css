@@ -13,3 +13,30 @@
     color: #2b2d42;
     font-weight: 600;
   }
+.trend-heading{
+    font-weight: bold;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    
+}
+
+
+.topic{
+    background-color: #6EFFC0;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #2b2d42;
+    padding: 0.5rem;
+    margin: 0.2rem;
+    margin-top: 0.9rem;
+    border-radius: 10px;
+    border: none;
+}
+
+.line-home{
+    width: 95vw;
+    background-color: #6EFFC0;
+    height: 0.19rem;
+    border: none;
+    margin-top: 1.5rem;
+}

@@ -15,9 +15,9 @@ const useStyles = makeStyles((theme) => ({
   },
   menu: {
     "& .MuiPaper-root": {
-      backgroundColor: "#2b2d42"
-    }
-  }
+      backgroundColor: "#2b2d42",
+    },
+  },
 }));
 
 const Home = () => {
@@ -42,10 +42,7 @@ const Home = () => {
             </Grid>
             <div>
               <div>
-                <Button
-                  onClick={handleClick}
-                  className="menu"
-                >
+                <Button onClick={handleClick} className="menu">
                   <p className="menu-text">ASWIN ASOK</p>
                 </Button>
                 <Menu
@@ -56,15 +53,42 @@ const Home = () => {
                   open={Boolean(anchorEl)}
                   onClose={handleClose}
                 >
-                  <MenuItem onClick={handleClose}><div className="menu-innertext">Profile</div></MenuItem>
-                  <MenuItem onClick={handleClose}><div className="menu-innertext">My account</div></MenuItem>
-                  <MenuItem onClick={handleClose}><div className="menu-innertext">Logout</div></MenuItem>
+                  <MenuItem onClick={handleClose}>
+                    <div className="menu-innertext">Profile</div>
+                  </MenuItem>
+                  <MenuItem onClick={handleClose}>
+                    <div className="menu-innertext">My account</div>
+                  </MenuItem>
+                  <MenuItem onClick={handleClose}>
+                    <div className="menu-innertext">Logout</div>
+                  </MenuItem>
                 </Menu>
               </div>
             </div>
           </Toolbar>
         </AppBar>
       </div>
+
+      <div className="trending"></div>
+      <Grid container direction="column" justify="center" alignItems="center">
+        <div className="trend-heading">Trending Topics</div>
+        <div className="topics">
+          <Grid
+            container
+            direction="row"
+            justify="center"
+            alignItems="center"
+          >
+            <div className="topic">React.js</div>
+            <div className="topic">JavaScript</div>
+            <div className="topic">Machine Learning</div>
+            <div className="topic">Python</div>
+            <div className="topic">Vue.js</div>
+            <div className="topic">Ethical Hacking</div>
+          </Grid>
+        </div>
+        <hr className="line-home"/>
+      </Grid>
     </div>
   );
 };
