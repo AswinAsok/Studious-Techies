@@ -15,9 +15,14 @@
   }
 .trend-heading{
     font-weight: bold;
-    margin-top: 1rem;
+    margin-top: 1.1rem;
     font-size: 1.2rem;
     
+}
+.latest-heading{
+    font-weight: bold;
+    margin-top: 1rem;
+    font-size: 1.6rem;
 }
 
 
@@ -42,18 +47,34 @@
 }
 
 /* -----------Course----------- */
-
+.courses{
+    align-items: center;
+    justify-content: center;
+}
 .course{
-    margin: 2rem;
+    margin: 1.5rem;
 }
 
 .buy{
     font-weight: bold;
-    font-size: 1.1rem;
-    margin-left: 35%;
+    font-size: 1.2rem;
     color: #2B2D42;
     padding-bottom: 1rem;
 
+}
+.prices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+}
+.old{
+    text-decoration: line-through;
+    font-size: 0.7rem;
+}
+.new{
+    font-size: 1.1rem;
 }
 .card-content{
     font-size: 0.9rem;

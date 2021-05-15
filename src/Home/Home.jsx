@@ -24,7 +24,7 @@ import MenuItem from "@material-ui/core/MenuItem";
 
 import reactlogo from "../Images/React.jpg";
 import jslogo from "../Images/js.png";
-import htmlcss from "../Images/htmlcss.png"
+import htmlcss from "../Images/htmlcss.png";
 
 import "./Home.css";
 
@@ -39,11 +39,12 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   root: {
-    minWidth: 300,
+    minWidth: 320,
     maxWidth: 300,
     minHeight: 400,
     backgroundColor: "#6effc0",
     color: "#2b2d42",
+    borderRadius: "5px",
   },
   media: {
     height: 0,
@@ -115,7 +116,9 @@ const Home = () => {
           </Grid>
         </div>
         <hr className="line-home" />
+        <div className="latest-heading">Latest Courses</div>
       </Grid>
+
       <div className="courses">
         <Grid container direction="row" justify="center" alignItems="center">
           <div className="course">
@@ -131,7 +134,12 @@ const Home = () => {
                 it step by step from the beginning, understanding basics
                 concepts to creating complex web apps with Redux.
               </CardContent>
-              <div className="buy">Buy Now</div>
+              <div className="prices">
+                <div className="old">Rs.1299</div>
+                <div className="new">Rs.699</div>
+                <div className="buy">Buy Now</div>
+              </div>
+              
             </Card>
           </div>
           <div className="course">
@@ -147,7 +155,12 @@ const Home = () => {
                 in front end development. Learn javascript from absolute scratch
                 with no prior experience.
               </CardContent>
-              <div className="buy">Buy Now</div>
+              <div className="prices">
+                <div className="old">Rs.999</div>
+                <div className="new">Rs.599</div>
+                <div className="buy">Buy Now</div>
+              </div>
+
             </Card>
           </div>
           <div className="course">
@@ -163,7 +176,12 @@ const Home = () => {
                 some web development skills already, do not worry! We will
                 create 3 projects with awesome design and animations!
               </CardContent>
-              <div className="buy">Buy Now</div>
+              <div className="prices">
+                <div className="old">Rs.699</div>
+                <div className="new">Rs.299</div>
+                <div className="buy">Buy Now</div>
+              </div>
+              
             </Card>
           </div>
         </Grid>
