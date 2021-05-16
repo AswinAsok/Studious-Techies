@@ -5,10 +5,9 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
-import logo from "../Images/LandingLogo.svg";
+import logo from "../Images/About.svg";
 import { BrowserRouter as Router, Link } from "react-router-dom";
-
-import "./Landing.css";
+import "./AboutUs.css";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -17,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Landing = () => {
+const AboutUs = () => {
   const classes = useStyles();
   return (
     <div>
@@ -36,31 +35,31 @@ const Landing = () => {
           </Toolbar>
         </AppBar>
       </div>
-      <div className="logo-container">
-        <Grid container direction="column" justify="center" alignItems="center">
-          <img className="logo" src={logo} alt="Image" />
-          <div>
-            <p>
-              Are You Prepared to Explore the world of Tech with other{" "}
-              <b>Studious Techies</b>.<br></br>
-              Join us by now lets start <b>Learning</b>
-            </p>
-          </div>
-          <div className="buttons">
-            <Link to="/signup">
-              <button className="logbtns">Sign Up</button>
-            </Link>
-            <Link to="/login">
-              <button className="logbtns">Login</button>
-            </Link>
-          </div>
-          <Link to="/aboutus">
-            <button className="abtbtns">About Us</button>
-          </Link>
-        </Grid>
+
+      <div className="aboutus-container">
+        <div className="logos-container">
+          <Grid
+            container
+            direction="column"
+            justify="center"
+            alignItems="center"
+          >
+              <div className="heading">About Us</div>
+            <img className="logo" src={logo} alt="Image" />
+            <div>
+              <p>
+                We are a community comprising of students and professionals
+                <br />
+                who believe in <b>self and peer to peer</b> learning.
+                <br /> Here at Studious-Techies we are providing knowledge to
+                <br /> individuals at an afforable price.
+              </p>
+            </div>
+          </Grid>
+        </div>
       </div>
     </div>
   );
 };
 
-export default Landing;
+export default AboutUs;

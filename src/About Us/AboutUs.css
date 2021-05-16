@@ -1,0 +1,30 @@
+.nav-text {
+    font-size: 1.55rem;
+    color: #2b2d42;
+    font-weight: 600;
+  }
+  .nav-textdown{
+      color: #2b2d42;
+      font-weight: 600;
+      font-size: 0.75rem;
+  }
+  
+  .logos-container {
+  text-align: center;
+  margin-top: 8vh;
+  }
+  
+  .logo {
+    min-height: 26vh;
+    max-height: 40vh;
+    width: 90vw;
+    margin-bottom: 1rem;
+    
+  }
+
+  .heading{
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 2rem;
+      
+  }

@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import AboutUs from "../About Us/AboutUs";
 import Home from "../Home/Home";
 
 import Landing from "../Landing/Landing";
@@ -15,6 +16,9 @@ function App() {
         <Switch>
           <Route path="/home">
             <Home />
+          </Route>
+          <Route path="/aboutus">
+            <AboutUs />
           </Route>
           <Route path="/payments">
             <Payments />

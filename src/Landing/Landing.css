@@ -11,7 +11,7 @@
 
 .logo-container {
 text-align: center;
-margin-top: 15vh;
+margin-top: 13vh;
 }
 
 .logo {
@@ -32,6 +32,20 @@ margin-top: 15vh;
     font-weight: 600;
     border-radius: 10px;
     color: #2b2d42;
+
+}
+
+.abtbtns{
+  background-color: #6effc0;
+  border: none;
+  margin: 0.25rem;
+  padding: 0.74rem;
+  width: 6rem;
+  margin-top: 0.5rem;
+  font-size: 1.0rem;
+  font-weight: 600;
+  border-radius: 10px;
+  color: #2b2d42;
 
 }
 

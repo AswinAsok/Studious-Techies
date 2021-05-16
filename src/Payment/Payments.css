@@ -40,7 +40,7 @@
 }
 
 /* -----------Purchases---------------- */
-.payments-container{
+.payments-container {
   margin-top: 2.25rem;
 }
 
@@ -99,8 +99,9 @@
   border-radius: 8px;
 }
 
-.checkout-container{
+.checkout-container {
   width: 70vw;
+  
 }
 
 .checkout {
@@ -108,8 +109,8 @@
   color: #2b2d42;
   font-weight: bold;
   border-radius: 8px;
+  margin-top: 2rem;
   margin-bottom: 2rem;
-  
 }
 
 .checkout-details {
