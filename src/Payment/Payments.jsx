@@ -97,7 +97,8 @@ const Payments = () => {
               <div>State Bank of India</div>
             </div>
           </div>
-
+        </Grid>
+        <Grid container direction="column" justify="center" alignItems="center">
           <div className="purchases">
             <div className="title">
               <div>Purchases</div>
@@ -135,6 +136,18 @@ const Payments = () => {
                   <div className="cprice">Rs.299</div>
                 </div>
               </div>
+            </div>
+          </div>
+
+          <div className="checkout">
+            <div className="title">
+              <div>Checkout</div>
+              <hr className="line" />
+            </div>
+            <div className="checkout-details">
+              
+              <div className="name">Aswin Asok</div>
+              <div className="total">Rs.1597</div>
             </div>
           </div>
         </Grid>

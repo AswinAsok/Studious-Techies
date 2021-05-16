@@ -40,48 +40,84 @@
 }
 
 /* -----------Purchases---------------- */
-.purchases{
-    background-color: #6effc0;
-    color: #2b2d42;
-    font-weight: bold;
-    margin-top: 1rem;
-    margin-bottom:2rem;
-    border-radius: 8px;
+.purchases {
+  background-color: #6effc0;
+  color: #2b2d42;
+  font-weight: bold;
+  margin: 1rem;
+  border-radius: 8px;
 }
 
-.title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0.8rem;
-    font-size: 1.2rem;
-    flex-direction: column;
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.8rem;
+  font-size: 1.2rem;
+  flex-direction: column;
+}
+
+.line {
+  width: 30px;
+  height: 0.2rem;
+  background-color: #2b2d42;
+  border: none;
+}
+
+.purchase {
+  background-color: #2b2d42;
+  border-radius: 7px;
+  color: #6effc0;
+  margin: 1rem;
+  font-weight: bold;
+}
+
+.purchase-details {
+  padding: 1rem;
+  width: 16rem;
+}
+.course-nameprice {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.instruct {
+  font-size: 0.8rem;
+}
+
+
+
+.checkout {
+  background-color: #6effc0;
+  color: #2b2d42;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 
 }
 
-.line{
-    width: 30px;
-    height: 0.2rem;
-    background-color: #2b2d42;
-    border: none;
+.checkout-details{
+  background-color: #2b2d42;
+  border-radius: 7px;
+  color: #6effc0;
+  margin: 1rem;
+  font-weight: bold;
+  padding: 1rem;
+  width: 16rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
 }
 
-.purchase{
-    background-color: #2b2d42;
-    border-radius: 7px;
-    color: #6effc0;
-    margin: 1rem;
-    font-weight: bold;
+.name{
+  font-size: 1.2rem;
 }
-.purchase-details{
-    padding: 1rem;
-    width: 60vw;
-}
-.course-nameprice{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.instruct{
-    font-size: 0.8rem;
+
+.total{
+  font-size: 1.1re;
 }
