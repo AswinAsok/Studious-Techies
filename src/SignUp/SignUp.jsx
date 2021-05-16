@@ -81,7 +81,9 @@ const SignUp = () => {
             </div>
 
             <div className="sbtn">
-              <button className="signup-button">Sign Up</button>
+              <Link to="/home">
+                <button className="signup-button">Sign Up</button>
+              </Link>
             </div>
           </div>
         </Grid>

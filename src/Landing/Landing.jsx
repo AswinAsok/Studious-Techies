@@ -53,7 +53,6 @@ const Landing = () => {
             <Link to="/signup"><button className="logbtns">Sign Up</button></Link>
             <Link to="/login"><button className="logbtns">Login</button></Link>
           </div>
-          
         </Grid>
       </div>
     </div>

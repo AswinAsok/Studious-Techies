@@ -60,6 +60,17 @@ const Login = () => {
               <input value="***********" className="input-field" type="text" />
             </div>
 
+            <div className="iamnotrobot">
+            <div className="box">
+                <label class="container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div className="text-robot">I am not a robot</div>
+            </div>
+            
+
             <div className="sbtn">
               <Link to="/home">
                 <button className="login-button">Login</button>
@@ -73,10 +84,10 @@ const Login = () => {
                 justify="center"
                 alignItems="center"
               >
-                <div className="general-texttwo">Forgot Password ?</div>
+                {/* <div className="general-texttwo">Forgot Password ?</div>
                 <Link to="/signup">
                   <div className="general-textone">Don't have a Account?</div>
-                </Link>
+                </Link> */}
               </Grid>
             </div>
           </div>
