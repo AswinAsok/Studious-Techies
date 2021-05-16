@@ -4,7 +4,7 @@
   border-radius: 8px;
   color: #6effc0;
   font-weight: bold;
-  padding-top: 0.5rem;
+  padding-top: 1rem;
 }
 
 .card-name {
@@ -31,7 +31,7 @@
   margin-top: 0.3rem;
 }
 .card-issuer {
-  margin-left: 8rem;
+  margin-left: 7.25rem;
 }
 .bank {
   display: flex;
@@ -108,6 +108,7 @@
   color: #2b2d42;
   font-weight: bold;
   border-radius: 8px;
+  margin-bottom: 2rem;
   
 }
 
@@ -119,7 +120,6 @@
   font-weight: bold;
   padding: 0.5rem;
   width: 10rem;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -127,7 +127,7 @@
 }
 @media screen and (min-width: 480px) {
   .checkout-details {
-    padding: 0rem;
+    padding: 0.5rem;
     width: 10rem;
   }
 }
