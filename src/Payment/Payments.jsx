@@ -101,7 +101,40 @@ const Payments = () => {
           <div className="purchases">
             <div className="title">
               <div>Purchases</div>
-              <hr className="line"/>
+              <hr className="line" />
+            </div>
+            <div className="purchase">
+              <div className="purchase-details">
+                <div className="course-nameprice">
+                  <div className="c-name">
+                    <div className="cname">React.js</div>
+                    <div className="instruct">Instructor: DevEd</div>
+                  </div>
+                  <div className="cprice">Rs.699</div>
+                </div>
+              </div>
+            </div>
+            <div className="purchase">
+              <div className="purchase-details">
+                <div className="course-nameprice">
+                  <div className="c-name">
+                    <div className="cname">JavaScript</div>
+                    <div className="instruct">Instructor: DevEd</div>
+                  </div>
+                  <div className="cprice">Rs.599</div>
+                </div>
+              </div>
+            </div>
+            <div className="purchase">
+              <div className="purchase-details">
+                <div className="course-nameprice">
+                  <div className="c-name">
+                    <div className="cname">HTML & CSS</div>
+                    <div className="instruct">Instructor: DevEd</div>
+                  </div>
+                  <div className="cprice">Rs.299</div>
+                </div>
+              </div>
             </div>
           </div>
         </Grid>

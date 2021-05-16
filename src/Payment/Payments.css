@@ -44,8 +44,6 @@
     background-color: #6effc0;
     color: #2b2d42;
     font-weight: bold;
-    min-height: 60vh;
-    min-width: 80vw;
     margin-top: 1rem;
     margin-bottom:2rem;
     border-radius: 8px;
@@ -68,3 +66,22 @@
     border: none;
 }
 
+.purchase{
+    background-color: #2b2d42;
+    border-radius: 7px;
+    color: #6effc0;
+    margin: 1rem;
+    font-weight: bold;
+}
+.purchase-details{
+    padding: 1rem;
+    width: 60vw;
+}
+.course-nameprice{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.instruct{
+    font-size: 0.8rem;
+}
