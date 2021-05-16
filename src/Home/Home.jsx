@@ -6,15 +6,8 @@ import CardMedia from "@material-ui/core/CardMedia";
 import CardContent from "@material-ui/core/CardContent";
 import CardActions from "@material-ui/core/CardActions";
 import Collapse from "@material-ui/core/Collapse";
-import Avatar from "@material-ui/core/Avatar";
-import IconButton from "@material-ui/core/IconButton";
-import Typography from "@material-ui/core/Typography";
-import { red } from "@material-ui/core/colors";
-import FavoriteIcon from "@material-ui/icons/Favorite";
-import ShareIcon from "@material-ui/icons/Share";
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import MoreVertIcon from "@material-ui/icons/MoreVert";
 import { makeStyles } from "@material-ui/core/styles";
+import { Link } from "react-router-dom";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Grid from "@material-ui/core/Grid";
@@ -54,7 +47,6 @@ const useStyles = makeStyles((theme) => ({
 
 const Home = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);
-  const [expanded, setExpanded] = React.useState(false);
 
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
@@ -71,7 +63,9 @@ const Home = () => {
         <AppBar className={classes.root_one} position="static">
           <Toolbar>
             <Grid container direction="column">
-              <div className="navbar-text">Studious-Techies</div>
+              <Link style={{ "text-decoration": "none" }} to="/">
+                <div className="navbar-text">Studious-Techies</div>
+              </Link>
             </Grid>
             <div>
               <div>
@@ -137,9 +131,10 @@ const Home = () => {
               <div className="prices">
                 <div className="old">Rs.1299</div>
                 <div className="new">Rs.699</div>
-                <div className="buy">Buy Now</div>
+                <Link style={{ "text-decoration": "none" }} to="/payments">
+                  <div className="buy">Buy Now</div>
+                </Link>
               </div>
-              
             </Card>
           </div>
           <div className="course">
@@ -158,9 +153,10 @@ const Home = () => {
               <div className="prices">
                 <div className="old">Rs.999</div>
                 <div className="new">Rs.599</div>
-                <div className="buy">Buy Now</div>
+                <Link style={{ "text-decoration": "none" }} to="/payments">
+                  <div className="buy">Buy Now</div>
+                </Link>
               </div>
-
             </Card>
           </div>
           <div className="course">
@@ -179,9 +175,10 @@ const Home = () => {
               <div className="prices">
                 <div className="old">Rs.699</div>
                 <div className="new">Rs.299</div>
-                <div className="buy">Buy Now</div>
+                <Link style={{ "text-decoration": "none" }} to="/payments">
+                  <div className="buy">Buy Now</div>
+                </Link>
               </div>
-              
             </Card>
           </div>
         </Grid>

@@ -4,6 +4,7 @@ import Home from "../Home/Home";
 
 import Landing from "../Landing/Landing";
 import Login from "../Login/Login";
+import Payments from "../Payment/Payments";
 import SignUp from "../SignUp/SignUp";
 import "./App.css";
 
@@ -14,6 +15,9 @@ function App() {
         <Switch>
           <Route path="/home">
             <Home />
+          </Route>
+          <Route path="/payments">
+            <Payments />
           </Route>
           <Route path="/signup">
             <SignUp />
