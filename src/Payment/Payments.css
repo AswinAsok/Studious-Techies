@@ -1,8 +1,8 @@
 .credit-card {
-  background-color: #6effc0;
+  background-color: #2b2d42;
   margin: 0.5rem;
   border-radius: 8px;
-  color: #2b2d42;
+  color: #6effc0;
   font-weight: bold;
   padding-top: 0.5rem;
 }
@@ -40,6 +40,10 @@
 }
 
 /* -----------Purchases---------------- */
+.payments-container{
+  margin-top: 2.25rem;
+}
+
 .purchases {
   background-color: #6effc0;
   color: #2b2d42;
@@ -74,12 +78,12 @@
 
 .purchase-details {
   padding: 1rem;
-  width: 60vw;
+  width: 70vw;
 }
 @media screen and (min-width: 480px) {
   .purchase-details {
     padding: 1rem;
-    width: 40vw;
+    width: 50vw;
   }
 }
 
@@ -95,10 +99,16 @@
   border-radius: 8px;
 }
 
-.checkout{
+.checkout-container{
+  width: 70vw;
+}
+
+.checkout {
   background-color: #6effc0;
   color: #2b2d42;
   font-weight: bold;
+  border-radius: 8px;
+  
 }
 
 .checkout-details {
@@ -107,8 +117,9 @@
   color: #6effc0;
   margin: 1rem;
   font-weight: bold;
-  padding: 1rem;
-  width: 60vw;
+  padding: 0.5rem;
+  width: 10rem;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -116,8 +127,13 @@
 }
 @media screen and (min-width: 480px) {
   .checkout-details {
-    padding: 1rem;
-    width: 40vw;
+    padding: 0rem;
+    width: 10rem;
+  }
+}
+@media screen and (min-width: 480px) {
+  .checkout {
+    padding: 0.5rem;
   }
 }
 

@@ -78,27 +78,12 @@ const Payments = () => {
       </div>
 
       <div className="payments-container">
-        <Grid container direction="column" justify="center" alignItems="center">
-          <div className="credit-card">
-            <div className="card-name">
-              <div>Aswin Asok</div>
-            </div>
-            <div className="card-number">
-              <div>5475-8541-6331-5446</div>
-            </div>
-            <div className="cvv-number">
-              <div className="eye-text">***</div>
-              <div className="eye">
-                <VisibilityOffSharpIcon />
-              </div>
-              <div className="card-issuer">Master Card</div>
-            </div>
-            <div className="bank">
-              <div>State Bank of India</div>
-            </div>
-          </div>
-        </Grid>
-        <Grid container direction="row" justify="center" alignItems="center">
+        <Grid
+          container
+          direction="row"
+          justify="space-around"
+          alignItems="center"
+        >
           <div className="purchases">
             <div className="title">
               <div>Purchases</div>
@@ -144,10 +129,42 @@ const Payments = () => {
               <div>Checkout</div>
               <hr className="line" />
             </div>
-            <div className="checkout-details">
-              <div className="name">Aswin Asok</div>
-              <div className="total">Rs.1597</div>
-            </div>
+            <Grid
+              container
+              direction="column"
+              justify="center"
+              alignItems="center"
+            >
+              <div className="credit-card">
+                <div className="card-name">
+                  <div>Aswin Asok</div>
+                </div>
+                <div className="card-number">
+                  <div>5475-8541-6331-5446</div>
+                </div>
+                <div className="cvv-number">
+                  <div className="eye-text">***</div>
+                  <div className="eye">
+                    <VisibilityOffSharpIcon />
+                  </div>
+                  <div className="card-issuer">Master Card</div>
+                </div>
+                <div className="bank">
+                  <div>State Bank of India</div>
+                </div>
+              </div>
+            </Grid>
+            <Grid
+              container
+              direction="column"
+              justify="center"
+              alignItems="center"
+            >
+              <div className="checkout-details">
+                <div>Checkout</div>
+                <div>Rs.1597</div>
+              </div>
+            </Grid>
           </div>
         </Grid>
       </div>
