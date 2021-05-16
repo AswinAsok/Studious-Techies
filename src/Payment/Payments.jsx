@@ -98,7 +98,7 @@ const Payments = () => {
             </div>
           </div>
         </Grid>
-        <Grid container direction="column" justify="center" alignItems="center">
+        <Grid container direction="row" justify="center" alignItems="center">
           <div className="purchases">
             <div className="title">
               <div>Purchases</div>
@@ -145,7 +145,6 @@ const Payments = () => {
               <hr className="line" />
             </div>
             <div className="checkout-details">
-              
               <div className="name">Aswin Asok</div>
               <div className="total">Rs.1597</div>
             </div>

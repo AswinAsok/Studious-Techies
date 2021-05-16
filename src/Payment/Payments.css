@@ -74,8 +74,15 @@
 
 .purchase-details {
   padding: 1rem;
-  width: 16rem;
+  width: 60vw;
 }
+@media screen and (min-width: 480px) {
+  .purchase-details {
+    padding: 1rem;
+    width: 40vw;
+  }
+}
+
 .course-nameprice {
   display: flex;
   flex-direction: row;
@@ -83,41 +90,41 @@
 }
 .instruct {
   font-size: 0.8rem;
+  color: #6effc0;
+  font-weight: bold;
+  border-radius: 8px;
 }
 
-
-
-.checkout {
+.checkout{
   background-color: #6effc0;
   color: #2b2d42;
   font-weight: bold;
-  margin-bottom: 2rem;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
-
 }
 
-.checkout-details{
+.checkout-details {
   background-color: #2b2d42;
   border-radius: 7px;
   color: #6effc0;
   margin: 1rem;
   font-weight: bold;
   padding: 1rem;
-  width: 16rem;
+  width: 60vw;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  
+}
+@media screen and (min-width: 480px) {
+  .checkout-details {
+    padding: 1rem;
+    width: 40vw;
+  }
 }
 
-.name{
+.name {
   font-size: 1.2rem;
 }
 
-.total{
+.total {
   font-size: 1.1re;
 }
