@@ -91,7 +91,6 @@ const Login = () => {
               </Grid>
             </div>
           </div>
-          <div className="line"></div>
           <div className="option-text">Login Using</div>
           <div className="login-options">
             <div className="github-logo">
