@@ -1,18 +1,25 @@
 .deved-img {
-  width: 45vw;
-  margin: 0.6rem;
-  background-color: #6effc0;
+  width: 18rem;
   border-radius: 10px 0px;
 }
 
+.insimg {
+  background-color: #6effc0;
+  margin: 1rem;
+  width: 5rem;
+  min-height: 20rem;
+  border-radius: 10px 0px;
+}
 
+.instructors-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 
 .instructor {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   align-items: center;
-  margin-top: 1.5rem;
   text-align: center;
 }
 
@@ -21,14 +28,20 @@
   margin: 0.5rem;
 }
 
-@media screen and (min-width: 680px) {
+
+@media screen and (min-width: 640px) {
   .deved-img {
-    margin: 2rem;
-    width: 20vw;
+    width: 18rem
   }
 }
 
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 640px) {
+  .instructors-container {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 640px) {
   .instructor {
     width: 45vw;
   }
