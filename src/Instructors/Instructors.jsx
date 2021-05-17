@@ -6,6 +6,7 @@ import Grid from "@material-ui/core/Grid";
 import "./Instructors.css";
 import Ins1 from "../Images/DevEd.png";
 import Ins2 from "../Images/Nikhil.png";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -27,11 +28,17 @@ const Instructors = () => {
               justify="center"
               alignItems="center"
             >
-              <div className="nav-text">Studious-Techies</div>
+              <Link style={{ "text-decoration": "none" }} to="/">
+                <div className="nav-text">Studious-Techies</div>
+              </Link>
               <div className="nav-textdown">- By Aswin Asok -</div>
             </Grid>
           </Toolbar>
         </AppBar>
+      </div>
+      <div className="heading">
+        Our Mentors
+        <hr className="lined" />
       </div>
 
       <div className="instructors-container">
@@ -45,14 +52,16 @@ const Instructors = () => {
             Development all the way to design, 3D and more!
           </div>
         </div>
-         <div className="instructor">
+        <div className="instructor">
           <div className="insimg">
-            <img className="deved-img" src={Ins1} alt="" />
+            <img className="nik-img" src={Ins2} alt="" />
           </div>
           <div className="instext">
-            Dev Ed is a multimedia content creator with over 200k subscribers on
-            youtube. Teaching you a wide range of technologies from Web
-            Development all the way to design, 3D and more!
+            Nikhil is a Software Engineer turned Entrepreneur who has 9+ years
+            of work experience in the software industry. His passion for
+            teaching had led him to start an educational institution where he
+            teaches how to learn for yourself and build a good career in the
+            tech industry.
           </div>
         </div>
       </div>

@@ -1,6 +1,33 @@
+.instructors-container{
+  padding-bottom: 2rem;
+}
+
+
 .deved-img {
   width: 18rem;
   border-radius: 10px 0px;
+}
+
+.nik-img {
+  width: 18rem;
+  border-radius: 10px 0px;
+  padding: 1rem;
+}
+
+.lined {
+  width: 50px;
+  height: 0.2rem;
+  background-color: #6effc0;
+  border: none;
+}
+
+.heading{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 1rem;
+  font-size: 2rem;
+  align-items: center;
 }
 
 .insimg {
@@ -25,23 +52,24 @@
 
 .instext {
   font-weight: bold;
-  margin: 0.5rem;
+  font-size: 0.9rem;
+  margin: 1rem;
 }
 
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 720px) {
   .deved-img {
     width: 18rem
   }
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 720px) {
   .instructors-container {
     flex-direction: row;
   }
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 720px) {
   .instructor {
     width: 45vw;
   }
