@@ -10,7 +10,7 @@
 
 .nik-img {
   width: 18rem;
-  border-radius: 10px 0px;
+  border-radius: 50px;
   padding: 1rem;
 }
 
@@ -21,19 +21,26 @@
   border: none;
 }
 
-.heading{
+.headingins{
   display: flex;
   justify-content: center;
   flex-direction: column;
   margin-top: 1rem;
+  font-weight: bold;
   font-size: 2rem;
   align-items: center;
+}
+
+.insname{
+  color: #2B2D42;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
 
 .insimg {
   background-color: #6effc0;
   margin: 1rem;
-  width: 5rem;
+  width: 6rem;
   min-height: 20rem;
   border-radius: 10px 0px;
 }

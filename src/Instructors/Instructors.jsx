@@ -36,7 +36,7 @@ const Instructors = () => {
           </Toolbar>
         </AppBar>
       </div>
-      <div className="heading">
+      <div className="headingins">
         Our Mentors
         <hr className="lined" />
       </div>
@@ -45,6 +45,7 @@ const Instructors = () => {
         <div className="instructor">
           <div className="insimg">
             <img className="deved-img" src={Ins1} alt="" />
+            <div className="insname">Dev Ed</div>
           </div>
           <div className="instext">
             Dev Ed is a multimedia content creator with over 200k subscribers on
@@ -55,6 +56,7 @@ const Instructors = () => {
         <div className="instructor">
           <div className="insimg">
             <img className="nik-img" src={Ins2} alt="" />
+            <div className="insname">Nikhil Kilivayil</div>
           </div>
           <div className="instext">
             Nikhil is a Software Engineer turned Entrepreneur who has 9+ years
