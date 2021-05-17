@@ -11,7 +11,7 @@
   
   .logos-container {
   text-align: center;
-  margin-top: 8vh;
+  margin-top: 6.5vh;
   }
   
   .logo {
@@ -27,4 +27,8 @@
       font-weight: bold;
       margin-bottom: 2rem;
       
+  }
+
+  p{
+      margin: 1rem;
   }

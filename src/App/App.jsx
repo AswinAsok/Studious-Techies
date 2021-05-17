@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import AboutUs from "../About Us/AboutUs";
 import Home from "../Home/Home";
+import Instructors from "../Instructors/Instructors";
 
 import Landing from "../Landing/Landing";
 import Login from "../Login/Login";
@@ -17,7 +18,10 @@ function App() {
           <Route path="/home">
             <Home />
           </Route>
-          <Route path="/aboutus">
+          <Route path="/instructors">
+            <Instructors />
+          </Route>
+          <Route path="/about-us">
             <AboutUs />
           </Route>
           <Route path="/payments">

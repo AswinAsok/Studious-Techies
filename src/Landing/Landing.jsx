@@ -3,8 +3,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Grid from "@material-ui/core/Grid";
-import Button from "@material-ui/core/Button";
-import IconButton from "@material-ui/core/IconButton";
 import logo from "../Images/LandingLogo.svg";
 import { BrowserRouter as Router, Link } from "react-router-dom";
 
@@ -54,7 +52,7 @@ const Landing = () => {
               <button className="logbtns">Login</button>
             </Link>
           </div>
-          <Link to="/aboutus">
+          <Link to="/about-us">
             <button className="abtbtns">About Us</button>
           </Link>
         </Grid>
