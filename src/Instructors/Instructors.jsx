@@ -6,6 +6,7 @@ import Grid from "@material-ui/core/Grid";
 import "./Instructors.css";
 import Ins1 from "../Images/DevEd.png";
 import Ins2 from "../Images/Nikhil.png";
+import Ins3 from "../Images/Hitesh.png";
 import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
@@ -64,6 +65,19 @@ const Instructors = () => {
             teaching had led him to start an educational institution where he
             teaches how to learn for yourself and build a good career in the
             tech industry.
+          </div>
+        </div>
+      </div>
+      <div className="instructors-container">
+        <div className="instructor">
+          <div className="insimg">
+            <img className="hit-img" src={Ins3} alt="" />
+            <div className="insname">Hitesh Choudhary</div>
+          </div>
+          <div className="instext">
+            Hitesh Choudhary is a Teacher by ♥️ and programmer by profession. He
+            is content creator in Youtube and makes videos related to code and
+            tech.
           </div>
         </div>
       </div>

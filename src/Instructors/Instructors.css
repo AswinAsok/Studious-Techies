@@ -8,6 +8,12 @@
   border-radius: 10px 0px;
 }
 
+.hit-img{
+  margin-top: 1.2rem;
+  width: 16rem;
+  border-radius: 40px
+}
+
 .nik-img {
   width: 18rem;
   border-radius: 50px;
@@ -55,6 +61,7 @@
 .instructor {
   align-items: center;
   text-align: center;
+  
 }
 
 .instext {
@@ -81,6 +88,6 @@
 
 @media screen and (min-width: 720px) {
   .instructor {
-    width: 45vw;
+    width: 43vw;
   }
 }
