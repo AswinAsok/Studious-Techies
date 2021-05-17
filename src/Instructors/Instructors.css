@@ -1,28 +1,34 @@
 .deved-img {
   width: 45vw;
+  margin: 0.6rem;
+  background-color: #6effc0;
+  border-radius: 10px 0px;
 }
+
+
 
 .instructor {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 1rem;
   margin-top: 1.5rem;
   text-align: center;
 }
 
 .instext {
   font-weight: bold;
+  margin: 0.5rem;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 680px) {
   .deved-img {
-    width: 25vw;
+    margin: 2rem;
+    width: 20vw;
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 680px) {
   .instructor {
     width: 45vw;
   }
