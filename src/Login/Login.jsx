@@ -91,7 +91,7 @@ const Login = () => {
               </Grid>
             </div>
           </div>
-          <div className="option-text">Login Using</div>
+          <div className="option-text"></div>
           <div className="login-options">
             <div className="github-logo">
               <img className="githublogo" src={githublogo} alt="" />

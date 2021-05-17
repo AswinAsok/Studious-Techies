@@ -1,34 +1,45 @@
 .nav-text {
-    font-size: 1.55rem;
-    color: #2b2d42;
-    font-weight: 600;
-  }
-  .nav-textdown{
-      color: #2b2d42;
-      font-weight: 600;
-      font-size: 0.75rem;
-  }
-  
-  .logos-container {
+  font-size: 1.55rem;
+  color: #2b2d42;
+  font-weight: 600;
+}
+.nav-textdown {
+  color: #2b2d42;
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+
+.logos-container {
   text-align: center;
   margin-top: 6.5vh;
-  }
-  
-  .logo {
-    min-height: 26vh;
-    max-height: 40vh;
-    width: 90vw;
-    margin-bottom: 1rem;
-    
-  }
+}
 
-  .heading{
-      font-size: 2.5rem;
-      font-weight: bold;
-      margin-bottom: 2rem;
-      
-  }
+.logo {
+  min-height: 26vh;
+  max-height: 40vh;
+  width: 90vw;
+  margin-bottom: 1rem;
+}
 
-  p{
-      margin: 1rem;
-  }
+.heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+p {
+  margin: 1rem;
+}
+
+.insbtn {
+  background-color: #6effc0;
+  border: none;
+  margin: 0.25rem;
+  padding: 0.74rem;
+  width: 14rem;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  color: #2b2d42;
+  margin-bottom: 2rem;
+}

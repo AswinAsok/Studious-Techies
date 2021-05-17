@@ -55,6 +55,9 @@ const AboutUs = () => {
                 <br /> individuals at an afforable price.
               </p>
             </div>
+            <Link to="/instructors">
+            <button className="insbtn">Meet our Mentors</button>
+          </Link>
           </Grid>
         </div>
       </div>
