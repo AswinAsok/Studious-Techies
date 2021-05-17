@@ -25,6 +25,14 @@
     font-size: 1.6rem;
 }
 
+.upcoming-heading{
+    font-weight: bold;
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+}
+
 
 .topic{
     background-color: #6EFFC0;
@@ -55,13 +63,6 @@
     margin: 1.5rem;
 }
 
-.buy{
-    font-weight: bold;
-    font-size: 1.2rem;
-    color: #2B2D42;
-    padding-bottom: 1rem;
-
-}
 .prices{
     display: flex;
     justify-content: center;
@@ -80,4 +81,16 @@
     font-size: 0.9rem;
     font-weight: bold;
     text-align: center;
+}
+
+.buy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2b2d42;
+    color: #6EFFC0;
+    border-radius: 10px;
+    width: 7rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
 }

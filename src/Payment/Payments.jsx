@@ -94,7 +94,7 @@ const Payments = () => {
                 <div className="course-nameprice">
                   <div className="c-name">
                     <div className="cname">React.js</div>
-                    <div className="instruct">Instructor: DevEd</div>
+                    <div className="instruct">Instructor: Hitesh</div>
                   </div>
                   <div className="cprice">Rs.699</div>
                 </div>
@@ -116,7 +116,7 @@ const Payments = () => {
                 <div className="course-nameprice">
                   <div className="c-name">
                     <div className="cname">HTML & CSS</div>
-                    <div className="instruct">Instructor: DevEd</div>
+                    <div className="instruct">Instructor: Nikhil</div>
                   </div>
                   <div className="cprice">Rs.299</div>
                 </div>

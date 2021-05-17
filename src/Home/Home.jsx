@@ -15,6 +15,9 @@ import reactlogo from "../Images/React.jpg";
 import jslogo from "../Images/js.png";
 import htmlcss from "../Images/htmlcss.png";
 
+import e1 from "../Images/Coding Event.png";
+import e2 from "../Images/Event2.jpg";
+
 import "./Home.css";
 
 const useStyles = makeStyles((theme) => ({
@@ -174,6 +177,46 @@ const Home = () => {
                 <Link style={{ "text-decoration": "none" }} to="/payments">
                   <div className="buy">Buy Now</div>
                 </Link>
+              </div>
+            </Card>
+          </div>
+        </Grid>
+      </div>
+      <hr className="line-home" />
+      <div className="upcoming-heading">
+        <div>Upcoming Events</div>
+      </div>
+      <div className="courses">
+        <Grid container direction="row" justify="center" alignItems="center">
+          <div className="course">
+            <Card className={classes.root}>
+              <CardMedia className={classes.media} image={e2} />
+              <CardContent className="card-content">
+                CROSS24 is a day long hackthon which is organised be Crossroads.
+                Each will be give problems and will have to use Technology to
+                solve the problem.Top 10 soultions will be sponsered by
+                Crossroads and makers will get free mentoring from them.
+              </CardContent>
+              <div className="prices">
+                  <div className="buy">Register</div>
+              </div>
+            </Card>
+          </div>
+          <div className="course">
+            <Card className={classes.root}>
+              <CardMedia
+                className={classes.media}
+                image={e1}
+                title="React.js"
+              />
+              <CardContent className="card-content">
+                5 Hours of Continuous Coding to use and showcase your coding
+                skills. You will be participating as a Team of 3 individuals and
+                the best one will be awarded prizes worth 5000K. This is
+                completely free and you can code in your favorite language
+              </CardContent>
+              <div className="prices">
+                <div className="buy">Register</div>
               </div>
             </Card>
           </div>
