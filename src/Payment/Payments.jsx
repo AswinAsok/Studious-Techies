@@ -64,11 +64,11 @@ const Payments = () => {
                   <MenuItem onClick={handleClose}>
                     <div className="menu-innertext">Profile</div>
                   </MenuItem>
+
                   <MenuItem onClick={handleClose}>
-                    <div className="menu-innertext">My account</div>
-                  </MenuItem>
-                  <MenuItem onClick={handleClose}>
-                    <div className="menu-innertext">Logout</div>
+                    <a href="/">
+                      <div className="menu-innertext">Logout</div>
+                    </a>
                   </MenuItem>
                 </Menu>
               </div>

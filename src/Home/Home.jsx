@@ -83,10 +83,9 @@ const Home = () => {
                     <div className="menu-innertext">Profile</div>
                   </MenuItem>
                   <MenuItem onClick={handleClose}>
-                    <div className="menu-innertext">My account</div>
-                  </MenuItem>
-                  <MenuItem onClick={handleClose}>
-                    <div className="menu-innertext">Logout</div>
+                    <a href="/">
+                      <div className="menu-innertext">Logout</div>
+                    </a>
                   </MenuItem>
                 </Menu>
               </div>
@@ -198,7 +197,7 @@ const Home = () => {
                 Crossroads and makers will get free mentoring from them.
               </CardContent>
               <div className="prices">
-                  <div className="buy">Register</div>
+                <div className="buy">Register</div>
               </div>
             </Card>
           </div>

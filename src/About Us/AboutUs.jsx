@@ -4,7 +4,7 @@ import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Grid from "@material-ui/core/Grid";
 import logo from "../Images/About.svg";
-import {Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./AboutUs.css";
 
 const useStyles = makeStyles((theme) => ({
@@ -27,7 +27,9 @@ const AboutUs = () => {
               justify="center"
               alignItems="center"
             >
-              <div className="nav-text">Studious-Techies</div>
+              <a href="/">
+                <div className="nav-text">Studious-Techies</div>
+              </a>
               <div className="nav-textdown">- By Aswin Asok -</div>
             </Grid>
           </Toolbar>
@@ -42,7 +44,7 @@ const AboutUs = () => {
             justify="center"
             alignItems="center"
           >
-              <div className="heading">About Us</div>
+            <div className="heading">About Us</div>
             <img className="logo" src={logo} alt="Image" />
             <div>
               <p>
@@ -53,9 +55,21 @@ const AboutUs = () => {
                 <br /> individuals at an afforable price.
               </p>
             </div>
-            <Link to="/instructors">
-            <button className="insbtn">Meet our Mentors</button>
-          </Link>
+            <div>
+              <Grid
+                container
+                direction="row"
+                justify="center"
+                alignItems="center"
+              >
+                <Link to="/instructors">
+                  <button className="insbtn">Meet our Mentors</button>
+                </Link>
+                <Link to="/contact-us">
+                  <button className="insbtn">Contact Us</button>
+                </Link>
+              </Grid>
+            </div>
           </Grid>
         </div>
       </div>

@@ -8,10 +8,13 @@
   font-weight: 600;
   font-size: 0.75rem;
 }
+a{
+  text-decoration: none;
+}
 
 .logos-container {
   text-align: center;
-  margin-top: 6.5vh;
+  margin-top: 7vh;
 }
 
 .logo {
@@ -36,10 +39,10 @@ p {
   border: none;
   margin: 0.25rem;
   padding: 0.74rem;
-  width: 14rem;
+  width: 11rem;
   margin-top: 0.5rem;
   font-size: 1rem;
   border-radius: 10px;
   color: #2b2d42;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }

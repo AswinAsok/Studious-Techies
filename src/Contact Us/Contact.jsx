@@ -27,7 +27,9 @@ const Contact = () => {
               justify="center"
               alignItems="center"
             >
-              <div className="nav-text">Studious-Techies</div>
+              <a href="/">
+                <div className="nav-text">Studious-Techies</div>
+              </a>
               <div className="nav-textdown">- By Aswin Asok -</div>
             </Grid>
           </Toolbar>
@@ -46,10 +48,19 @@ const Contact = () => {
             <img className="logo" src={logo} alt="Image" />
             <div>
               <p>
-                In order to contact us you can either email
-                <b> studioustech@tech.com</b> <br /> or connect with one of your
-                nearest campus communites.<br />Being a completely <b>online platform</b>,
-                Studious Techies currently don't have any offine offices.
+                In order to contact us you can email
+                <b> studioustech@tech.com</b>
+                <br />
+                Connect with one of your nearest campus communites or Call our
+                Executives.
+                <br />
+                Being a completely <b>online platform</b>, Studious Techies
+                currently don't have any offine offices.
+                <br />
+                <br />
+                <b>Executive</b>
+                <br />
+                <b>Aswin Asok</b>: +919074750272
               </p>
             </div>
             <Link to="/instructors">
