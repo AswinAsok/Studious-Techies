@@ -79,16 +79,16 @@ const Home = () => {
                   open={Boolean(anchorEl)}
                   onClose={handleClose}
                 >
-                  <MenuItem onClick={handleClose}>
-                    <a href="/profile">
+                  <a href="/profile">
+                    <MenuItem onClick={handleClose}>
                       <div className="menu-innertext">Profile</div>
-                    </a>
-                  </MenuItem>
-                  <MenuItem onClick={handleClose}>
-                    <a href="/">
+                    </MenuItem>
+                  </a>
+                  <a href="/">
+                    <MenuItem onClick={handleClose}>
                       <div className="menu-innertext">Logout</div>
-                    </a>
-                  </MenuItem>
+                    </MenuItem>
+                  </a>
                 </Menu>
               </div>
             </div>
