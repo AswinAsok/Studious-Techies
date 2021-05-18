@@ -61,7 +61,7 @@ const Payments = () => {
                   open={Boolean(anchorEl)}
                   onClose={handleClose}
                 >
-                  <a href="/profile">
+                  <a href="/profile/aswinasok">
                     <MenuItem onClick={handleClose}>
                       <div className="menu-innertext">Profile</div>
                     </MenuItem>
