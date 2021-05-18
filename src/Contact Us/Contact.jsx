@@ -3,9 +3,9 @@ import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Grid from "@material-ui/core/Grid";
-import logo from "../Images/About.svg";
-import {Link } from "react-router-dom";
-import "./AboutUs.css";
+import logo from "../Images/Contact.svg";
+import { Link } from "react-router-dom";
+import "./Contact.css";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const AboutUs = () => {
+const Contact = () => {
   const classes = useStyles();
   return (
     <div>
@@ -42,20 +42,19 @@ const AboutUs = () => {
             justify="center"
             alignItems="center"
           >
-              <div className="heading">About Us</div>
+            <div className="heading">Contact Us</div>
             <img className="logo" src={logo} alt="Image" />
             <div>
               <p>
-                We are a community comprising of students and professionals
-                <br />
-                who believe in <b>self and peer to peer</b> learning.
-                <br /> Here at Studious-Techies we are providing knowledge to
-                <br /> individuals at an afforable price.
+                In order to contact us you can either email
+                <b> studioustech@tech.com</b> <br /> or connect with one of your
+                nearest campus communites.<br />Being a completely <b>online platform</b>,
+                Studious Techies currently don't have any offine offices.
               </p>
             </div>
             <Link to="/instructors">
-            <button className="insbtn">Meet our Mentors</button>
-          </Link>
+              <button className="insbtn">Meet our Mentors</button>
+            </Link>
           </Grid>
         </div>
       </div>
@@ -63,4 +62,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default Contact;

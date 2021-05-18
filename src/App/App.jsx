@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import AboutUs from "../About Us/AboutUs";
+import Contact from "../Contact Us/Contact";
 import Home from "../Home/Home";
 import Instructors from "../Instructors/Instructors";
 
@@ -17,6 +18,9 @@ function App() {
         <Switch>
           <Route path="/home">
             <Home />
+          </Route>
+          <Route path="/contact-us">
+           <Contact />
           </Route>
           <Route path="/instructors">
             <Instructors />
