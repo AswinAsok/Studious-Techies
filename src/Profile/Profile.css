@@ -1,0 +1,118 @@
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 96vh;
+}
+
+.profile-box {
+  background-color: #6effc0;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-radius: 15px;
+  padding-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 480px) {
+    .profile-box  {
+      margin-top: 1rem;
+    }
+  }
+
+.profile-header {
+  background-color: #2b2d42;
+  font-size: 1rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.name {
+  font-size: 1.5rem;
+}
+
+.details {
+  color: #2b2d42;
+  font-weight: bold;
+}
+
+.pro-email {
+  font-size: 0.6rem;
+}
+
+.pro-join {
+  font-size: 0.8rem;
+}
+
+.pro-line {
+  width: 17rem;
+  background-color: #2b2d42;
+  height: 0.15rem;
+  border: none;
+  margin-top: rem;
+}
+
+.pro1-line {
+  width: 2rem;
+  background-color: #2b2d42;
+  height: 0.15rem;
+  border: none;
+  margin-top: rem;
+}
+
+.courses{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* -----------Saved Cards--------- */
+
+.procredit-card {
+  background-color: #2b2d42;
+  margin: 0.5rem;
+  border-radius: 8px;
+  color: #6effc0;
+  font-weight: bold;
+  padding-bottom: 0.1rem;
+  padding-top: 1rem;
+}
+
+.procard-number {
+  display: flex;
+  font-size: 0.9rem;
+  justify-content: center;
+  text-align: center;
+}
+
+.procvv-number {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem;
+}
+.proeye {
+  margin-left: 0.5rem;
+}
+.proeye-text {
+  margin-top: 0.3rem;
+}
+.procard-issuer {
+  margin-left: 4.4rem;
+}
+
+.pro-buy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2b2d42;
+    color: #6EFFC0;
+    border-radius: 10px;
+    width: 7rem;
+    margin-top: 1re;
+    padding: 0.5rem;
+}
+

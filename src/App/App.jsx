@@ -8,6 +8,7 @@ import Instructors from "../Instructors/Instructors";
 import Landing from "../Landing/Landing";
 import Login from "../Login/Login";
 import Payments from "../Payment/Payments";
+import Profile from "../Profile/Profile";
 import SignUp from "../SignUp/SignUp";
 import "./App.css";
 
@@ -16,11 +17,14 @@ function App() {
     <div className="App">
       <Router>
         <Switch>
+          <Route path="/profile">
+            <Profile />
+          </Route>
           <Route path="/home">
             <Home />
           </Route>
           <Route path="/contact-us">
-           <Contact />
+            <Contact />
           </Route>
           <Route path="/instructors">
             <Instructors />

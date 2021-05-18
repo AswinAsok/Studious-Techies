@@ -80,7 +80,9 @@ const Home = () => {
                   onClose={handleClose}
                 >
                   <MenuItem onClick={handleClose}>
-                    <div className="menu-innertext">Profile</div>
+                    <a href="/profile">
+                      <div className="menu-innertext">Profile</div>
+                    </a>
                   </MenuItem>
                   <MenuItem onClick={handleClose}>
                     <a href="/">
