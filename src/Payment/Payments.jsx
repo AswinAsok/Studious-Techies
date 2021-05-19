@@ -11,7 +11,7 @@ import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
 import VisibilityOffSharpIcon from "@material-ui/icons/VisibilityOffSharp";
 import Footer from "../Footer/Footer";
-
+import Fade from "react-reveal/Fade";
 import "./Payments.css";
 
 const useStyles = makeStyles((theme) => ({
@@ -72,6 +72,11 @@ const Payments = () => {
                       <div className="menu-innertext">Logout</div>
                     </MenuItem>
                   </a>
+                  <a href="/about-us">
+                    <MenuItem onClick={handleClose}>
+                      <div className="menu-innertext">About Us</div>
+                    </MenuItem>
+                  </a>
                 </Menu>
               </div>
             </div>
@@ -86,91 +91,94 @@ const Payments = () => {
           justify="space-around"
           alignItems="center"
         >
-          <div className="purchases">
-            <div className="title">
-              <div>Purchases</div>
-              <hr className="line" />
-            </div>
-            <div className="purchase">
-              <div className="purchase-details">
-                <div className="course-nameprice">
-                  <div className="c-name">
-                    <div className="cname">React.js</div>
-                    <div className="instruct">Instructor: Hitesh</div>
-                    <div className="instruct">Validity: Lifetime</div>
+          <Fade left>
+            <div className="purchases">
+              <div className="title">
+                <div>Purchases</div>
+                <hr className="line" />
+              </div>
+              <div className="purchase">
+                <div className="purchase-details">
+                  <div className="course-nameprice">
+                    <div className="c-name">
+                      <div className="cname">React.js</div>
+                      <div className="instruct">Instructor: Hitesh</div>
+                      <div className="instruct">Validity: Lifetime</div>
+                    </div>
+                    <div className="cprice">Rs.699</div>
                   </div>
-                  <div className="cprice">Rs.699</div>
+                </div>
+              </div>
+              <div className="purchase">
+                <div className="purchase-details">
+                  <div className="course-nameprice">
+                    <div className="c-name">
+                      <div className="cname">JavaScript</div>
+                      <div className="instruct">Instructor: DevEd</div>
+                      <div className="instruct">Validity: Lifetime</div>
+                    </div>
+                    <div className="cprice">Rs.599</div>
+                  </div>
+                </div>
+              </div>
+              <div className="purchase">
+                <div className="purchase-details">
+                  <div className="course-nameprice">
+                    <div className="c-name">
+                      <div className="cname">HTML & CSS</div>
+                      <div className="instruct">Instructor: Nikhil</div>
+                      <div className="instruct">Validity: Lifetime</div>
+                    </div>
+                    <div className="cprice">Rs.299</div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="purchase">
-              <div className="purchase-details">
-                <div className="course-nameprice">
-                  <div className="c-name">
-                    <div className="cname">JavaScript</div>
-                    <div className="instruct">Instructor: DevEd</div>
-                    <div className="instruct">Validity: Lifetime</div>
-                  </div>
-                  <div className="cprice">Rs.599</div>
-                </div>
-              </div>
-            </div>
-            <div className="purchase">
-              <div className="purchase-details">
-                <div className="course-nameprice">
-                  <div className="c-name">
-                    <div className="cname">HTML & CSS</div>
-                    <div className="instruct">Instructor: Nikhil</div>
-                    <div className="instruct">Validity: Lifetime</div>
-                  </div>
-                  <div className="cprice">Rs.299</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="checkout">
-            <div className="title">
-              <div>Checkout</div>
-              <hr className="line" />
-            </div>
-            <Grid
-              container
-              direction="column"
-              justify="center"
-              alignItems="center"
-            >
-              <div className="credit-card">
-                <div className="card-name">
-                  <div>Aswin Asok</div>
-                </div>
-                <div className="card-number">
-                  <div>5475-8541-6331-5446</div>
-                </div>
-                <div className="cvv-number">
-                  <div className="eye-text">***</div>
-                  <div className="eye">
-                    <VisibilityOffSharpIcon />
-                  </div>
-                  <div className="card-issuer">Master Card</div>
-                </div>
-                <div className="bank">
-                  <div>State Bank of India</div>
-                </div>
-              </div>
-            </Grid>
-            <Grid
-              container
-              direction="column"
-              justify="center"
-              alignItems="center"
-            >
-              <div className="checkout-details">
+          </Fade>
+          <Fade right>
+            <div className="checkout">
+              <div className="title">
                 <div>Checkout</div>
-                <div>Rs.1597</div>
+                <hr className="line" />
               </div>
-            </Grid>
-          </div>
+              <Grid
+                container
+                direction="column"
+                justify="center"
+                alignItems="center"
+              >
+                <div className="credit-card">
+                  <div className="card-name">
+                    <div>Aswin Asok</div>
+                  </div>
+                  <div className="card-number">
+                    <div>5475-8541-6331-5446</div>
+                  </div>
+                  <div className="cvv-number">
+                    <div className="eye-text">***</div>
+                    <div className="eye">
+                      <VisibilityOffSharpIcon />
+                    </div>
+                    <div className="card-issuer">Master Card</div>
+                  </div>
+                  <div className="bank">
+                    <div>State Bank of India</div>
+                  </div>
+                </div>
+              </Grid>
+              <Grid
+                container
+                direction="column"
+                justify="center"
+                alignItems="center"
+              >
+                <div className="checkout-details">
+                  <div>Checkout</div>
+                  <div>Rs.1597</div>
+                </div>
+              </Grid>
+            </div>
+          </Fade>
         </Grid>
       </div>
       <Footer />

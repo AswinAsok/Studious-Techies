@@ -7,6 +7,7 @@ import logo from "../Images/About.svg";
 import { Link } from "react-router-dom";
 import "./AboutUs.css";
 import Footer from "../Footer/Footer";
+import Fade from "react-reveal/Fade";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -45,37 +46,41 @@ const AboutUs = () => {
             justify="center"
             alignItems="center"
           >
-            <div className="heading">About Us</div>
-            <img className="logo" src={logo} alt="Image" />
-            <div>
-              <p>
-                We are a community comprising of students and professionals
-                <br />
-                who believe in <b>self and peer to peer</b> learning.
-                <br /> Here at Studious-Techies we are providing knowledge to
-                <br /> individuals at an afforable price.
-              </p>
-            </div>
-            <div>
-              <Grid
-                container
-                direction="row"
-                justify="center"
-                alignItems="center"
-              >
-                <Link to="/instructors">
-                  <button className="insbtn">Meet our Mentors</button>
-                </Link>
-                <Link to="/contact-us">
-                  <button className="insbtn">Contact Us</button>
-                </Link>
-              </Grid>
-            </div>
+            <Fade>
+              <div className="heading">About Us</div>
+              <img className="logo" src={logo} alt="Image" />
+            </Fade>
+            <Fade top>
+              <div>
+                <p>
+                  We are a community comprising of students and professionals
+                  <br />
+                  who believe in <b>self and peer to peer</b> learning.
+                  <br /> Here at Studious-Techies we are providing knowledge to
+                  <br /> individuals at an afforable price.
+                </p>
+              </div>
+              <div>
+                <Grid
+                  container
+                  direction="row"
+                  justify="center"
+                  alignItems="center"
+                >
+                  <Link to="/instructors">
+                    <button className="insbtn">Meet our Mentors</button>
+                  </Link>
+                  <Link to="/contact-us">
+                    <button className="insbtn">Contact Us</button>
+                  </Link>
+                </Grid>
+              </div>
+            </Fade>
           </Grid>
         </div>
       </div>
-      <br/>
-      <Footer/>
+      <br />
+      <Footer />
     </div>
   );
 };

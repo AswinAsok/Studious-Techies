@@ -7,6 +7,7 @@ import logo from "../Images/Contact.svg";
 import { Link } from "react-router-dom";
 import "./Contact.css";
 import Footer from "../Footer/Footer";
+import Fade from "react-reveal/Fade";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -45,12 +46,16 @@ const Contact = () => {
             justify="center"
             alignItems="center"
           >
-            <div className="heading">Contact Us</div>
-            <img className="logo" src={logo} alt="Image" />
+            <Fade>
+              <div className="heading">Contact Us</div>
+
+              <img className="logo" src={logo} alt="Image" />
+            </Fade>
+            <Fade top>
             <div>
               <p>
                 In order to contact us you can email
-                <b> studioustech@tech.com</b>
+                <b> aswinasokofficial@gmail.com,</b>
                 <br />
                 Connect with one of your nearest campus communites or Call our
                 Executives.
@@ -64,13 +69,15 @@ const Contact = () => {
                 <b>Aswin Asok</b>: +919074750272
               </p>
             </div>
+            
             <Link to="/instructors">
               <button className="insbtn">Meet our Mentors</button>
             </Link>
+            </Fade>
           </Grid>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

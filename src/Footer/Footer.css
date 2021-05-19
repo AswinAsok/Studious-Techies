@@ -10,7 +10,12 @@
 
 .footer{
     font-weight: bold;
-    font-size: 0.9rem;
-    margin: 0.5rem;
+    font-size: 0.85rem;
+    margin: 0.6rem;
     letter-spacing: 0.03rem;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
 }

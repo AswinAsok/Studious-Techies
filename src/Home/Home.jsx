@@ -10,6 +10,7 @@ import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
+import Fade from "react-reveal/Fade";
 
 import reactlogo from "../Images/React.jpg";
 import jslogo from "../Images/js.png";
@@ -90,6 +91,11 @@ const Home = () => {
                       <div className="menu-innertext">Logout</div>
                     </MenuItem>
                   </a>
+                  <a href="/about-us">
+                    <MenuItem onClick={handleClose}>
+                      <div className="menu-innertext">About Us</div>
+                    </MenuItem>
+                  </a>
                 </Menu>
               </div>
             </div>
@@ -99,133 +105,154 @@ const Home = () => {
 
       <div className="trending"></div>
       <Grid container direction="column" justify="center" alignItems="center">
-        <div className="trend-heading">Trending Topics</div>
+        <Fade>
+          <div className="trend-heading">Trending Topics</div>
+        </Fade>
         <div className="topics">
           <Grid container direction="row" justify="center" alignItems="center">
-            <div className="topic">React.js</div>
-            <div className="topic">JavaScript</div>
-            <div className="topic">Machine Learning</div>
-            <div className="topic">Python</div>
-            <div className="topic">Vue.js</div>
-            <div className="topic">Ethical Hacking</div>
+            <Fade left>
+              <div className="topic">React.js</div>
+              <div className="topic">JavaScript</div>
+              <div className="topic">Machine Learning</div>
+            </Fade>
+            <Fade right>
+              <div className="topic">Python</div>
+              <div className="topic">Vue.js</div>
+              <div className="topic">Ethical Hacking</div>
+            </Fade>
           </Grid>
         </div>
-        <hr className="line-home" />
-        <div className="latest-heading">Latest Courses</div>
+        <Fade>
+          <hr className="line-home" />
+          <div className="latest-heading">Latest Courses</div>
+        </Fade>
       </Grid>
 
       <div className="courses">
         <Grid container direction="row" justify="center" alignItems="center">
-          <div className="course">
-            <Card className={classes.root}>
-              <CardMedia
-                className={classes.media}
-                image={reactlogo}
-                title="React.js"
-              />
-              <CardContent className="card-content">
-                This course will teach you everything you need to know about
-                React. Get started now with 0 experience in React, we will take
-                it step by step from the beginning, understanding basics
-                concepts to creating complex web apps with Redux.
-              </CardContent>
-              <div className="prices">
-                <div className="old">Rs.1299</div>
-                <div className="new">Rs.699</div>
-                <Link style={{ "text-decoration": "none" }} to="/payments">
-                  <div className="buy">Buy Now</div>
-                </Link>
-              </div>
-            </Card>
-          </div>
-          <div className="course">
-            <Card className={classes.root}>
-              <CardMedia
-                className={classes.media}
-                image={jslogo}
-                title="React.js"
-              />
-              <CardContent className="card-content">
-                Javascript is the most popular programming language in the
-                world! This course is ideal for anyone who wants to get started
-                in front end development. Learn javascript from absolute scratch
-                with no prior experience.
-              </CardContent>
-              <div className="prices">
-                <div className="old">Rs.999</div>
-                <div className="new">Rs.599</div>
-                <Link style={{ "text-decoration": "none" }} to="/payments">
-                  <div className="buy">Buy Now</div>
-                </Link>
-              </div>
-            </Card>
-          </div>
-          <div className="course">
-            <Card className={classes.root}>
-              <CardMedia
-                className={classes.media}
-                image={htmlcss}
-                title="React.js"
-              />
-              <CardContent className="card-content">
-                IIf you are a complete beginner we will cover all the basics to
-                get you up and going to create your first website. If you have
-                some web development skills already, do not worry! We will
-                create 3 projects with awesome design and animations!
-              </CardContent>
-              <div className="prices">
-                <div className="old">Rs.699</div>
-                <div className="new">Rs.299</div>
-                <Link style={{ "text-decoration": "none" }} to="/payments">
-                  <div className="buy">Buy Now</div>
-                </Link>
-              </div>
-            </Card>
-          </div>
+          <Fade left>
+            <div className="course">
+              <Card className={classes.root}>
+                <CardMedia
+                  className={classes.media}
+                  image={reactlogo}
+                  title="React.js"
+                />
+                <CardContent className="card-content">
+                  This course will teach you everything you need to know about
+                  React. Get started now with 0 experience in React, we will
+                  take it step by step from the beginning, understanding basics
+                  concepts to creating complex web apps with Redux.
+                </CardContent>
+                <div className="prices">
+                  <div className="old">Rs.1299</div>
+                  <div className="new">Rs.699</div>
+                  <Link style={{ "text-decoration": "none" }} to="/payments">
+                    <div className="buy">Buy Now</div>
+                  </Link>
+                </div>
+              </Card>
+            </div>
+          </Fade>
+          <Fade bottom>
+            <div className="course">
+              <Card className={classes.root}>
+                <CardMedia
+                  className={classes.media}
+                  image={jslogo}
+                  title="React.js"
+                />
+                <CardContent className="card-content">
+                  Javascript is the most popular programming language in the
+                  world! This course is ideal for anyone who wants to get
+                  started in front end development. Learn javascript from
+                  absolute scratch with no prior experience.
+                </CardContent>
+                <div className="prices">
+                  <div className="old">Rs.999</div>
+                  <div className="new">Rs.599</div>
+                  <Link style={{ "text-decoration": "none" }} to="/payments">
+                    <div className="buy">Buy Now</div>
+                  </Link>
+                </div>
+              </Card>
+            </div>
+          </Fade>
+          <Fade right>
+            <div className="course">
+              <Card className={classes.root}>
+                <CardMedia
+                  className={classes.media}
+                  image={htmlcss}
+                  title="React.js"
+                />
+                <CardContent className="card-content">
+                  IIf you are a complete beginner we will cover all the basics
+                  to get you up and going to create your first website. If you
+                  have some web development skills already, do not worry! We
+                  will create 3 projects with awesome design and animations!
+                </CardContent>
+                <div className="prices">
+                  <div className="old">Rs.699</div>
+                  <div className="new">Rs.299</div>
+                  <Link style={{ "text-decoration": "none" }} to="/payments">
+                    <div className="buy">Buy Now</div>
+                  </Link>
+                </div>
+              </Card>
+            </div>
+          </Fade>
         </Grid>
       </div>
-      <hr className="line-home" />
-      <div className="upcoming-heading">
-        <div>Upcoming Events</div>
-      </div>
+      <Fade>
+        <hr className="line-home" />
+        <div className="upcoming-heading">
+          <div>Upcoming Events</div>
+        </div>
+      </Fade>
       <div className="courses">
         <Grid container direction="row" justify="center" alignItems="center">
-          <div className="course">
-            <Card className={classes.root}>
-              <CardMedia className={classes.media} image={e2} />
-              <CardContent className="card-content">
-                CROSS24 is a day long hackthon which is organised be Crossroads.
-                Each will be give problems and will have to use Technology to
-                solve the problem.Top 10 soultions will be sponsered by
-                Crossroads and makers will get free mentoring from them.
-              </CardContent>
-              <div className="prices">
-                <div className="buy">Register</div>
-              </div>
-            </Card>
-          </div>
-          <div className="course">
-            <Card className={classes.root}>
-              <CardMedia
-                className={classes.media}
-                image={e1}
-                title="React.js"
-              />
-              <CardContent className="card-content">
-                5 Hours of Continuous Coding to use and showcase your coding
-                skills. You will be participating as a Team of 3 individuals and
-                the best one will be awarded prizes worth 5000K. This is
-                completely free and you can code in your favorite language
-              </CardContent>
-              <div className="prices">
-                <div className="buy">Register</div>
-              </div>
-            </Card>
-          </div>
+          <Fade left>
+            <div className="course">
+              <Card className={classes.root}>
+                <CardMedia className={classes.media} image={e2} />
+                <CardContent className="card-content">
+                  CROSS24 is a day long hackthon which is organised be
+                  Crossroads. Each will be give problems and will have to use
+                  Technology to solve the problem.Top 10 soultions will be
+                  sponsered by Crossroads and makers will get free mentoring
+                  from them.
+                </CardContent>
+                <div className="prices">
+                  <div className="buy">Register</div>
+                </div>
+              </Card>
+            </div>
+          </Fade>
+          <Fade right>
+            <div className="course">
+              <Card className={classes.root}>
+                <CardMedia
+                  className={classes.media}
+                  image={e1}
+                  title="React.js"
+                />
+                <CardContent className="card-content">
+                  5 Hours of Continuous Coding to use and showcase your coding
+                  skills. You will be participating as a Team of 3 individuals
+                  and the best one will be awarded prizes worth 5000K. This is
+                  completely free and you can code in your favorite language
+                </CardContent>
+                <div className="prices">
+                  <div className="buy">Register</div>
+                </div>
+              </Card>
+            </div>
+          </Fade>
         </Grid>
       </div>
-      <br/>
-      <Footer/>
+      <br />
+      <Footer />
     </div>
   );
 };

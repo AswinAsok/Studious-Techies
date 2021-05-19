@@ -77,7 +77,7 @@ const SignUp = () => {
 
             <div className="terms">
               By Clicking the Sign-Up button you are agreeing to the{" "}
-              <i>Terms and Conditions</i> which are mentioned.
+             <br/> <i>Terms and Conditions</i>
             </div>
 
             <div className="sbtn">

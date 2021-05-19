@@ -9,6 +9,7 @@ import Ins2 from "../Images/Nikhil.png";
 import Ins3 from "../Images/Hitesh.png";
 import { Link } from "react-router-dom";
 import Footer from "../Footer/Footer";
+import Fade from "react-reveal/Fade";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -38,52 +39,61 @@ const Instructors = () => {
           </Toolbar>
         </AppBar>
       </div>
-      <div className="headingins">
-        Our Mentors
-        <hr className="lined" />
+      <Fade>
+        <div className="headingins">
+          Our Mentors
+          <hr className="lined" />
+        </div>
+      </Fade>
+
+      <div className="instructors-container">
+        <Fade left>
+          <div className="instructor">
+            <div className="insimg">
+              <img className="deved-img" src={Ins1} alt="" />
+              <div className="insname">Dev Ed</div>
+            </div>
+            <div className="instext">
+              Dev Ed is a multimedia content creator with over 200k subscribers
+              on youtube. Teaching you a wide range of technologies from Web
+              Development all the way to design, 3D and more!
+            </div>
+          </div>
+        </Fade>
+        <Fade right>
+          <div className="instructor">
+            <div className="insimg">
+              <img className="nik-img" src={Ins2} alt="" />
+              <div className="insname">Nikhil Kilivayil</div>
+            </div>
+            <div className="instext">
+              Nikhil is a Software Engineer turned Entrepreneur who has 9+ years
+              of work experience in the software industry. His passion for
+              teaching had led him to start an educational institution where he
+              teaches how to learn for yourself and build a good career in the
+              tech industry.
+            </div>
+          </div>
+        </Fade>
       </div>
 
       <div className="instructors-container">
-        <div className="instructor">
-          <div className="insimg">
-            <img className="deved-img" src={Ins1} alt="" />
-            <div className="insname">Dev Ed</div>
+        <Fade left>
+          <div className="instructor">
+            <div className="insimg">
+              <img className="hit-img" src={Ins3} alt="" />
+              <div className="insname">Hitesh Choudhary</div>
+            </div>
+            <div className="instext">
+              Hitesh Choudhary is a Teacher by ♥️ and programmer by profession.
+              He is content creator in Youtube and makes videos related to code
+              and tech.
+            </div>
           </div>
-          <div className="instext">
-            Dev Ed is a multimedia content creator with over 200k subscribers on
-            youtube. Teaching you a wide range of technologies from Web
-            Development all the way to design, 3D and more!
-          </div>
-        </div>
-        <div className="instructor">
-          <div className="insimg">
-            <img className="nik-img" src={Ins2} alt="" />
-            <div className="insname">Nikhil Kilivayil</div>
-          </div>
-          <div className="instext">
-            Nikhil is a Software Engineer turned Entrepreneur who has 9+ years
-            of work experience in the software industry. His passion for
-            teaching had led him to start an educational institution where he
-            teaches how to learn for yourself and build a good career in the
-            tech industry.
-          </div>
-        </div>
+        </Fade>
       </div>
-      <div className="instructors-container">
-        <div className="instructor">
-          <div className="insimg">
-            <img className="hit-img" src={Ins3} alt="" />
-            <div className="insname">Hitesh Choudhary</div>
-          </div>
-          <div className="instext">
-            Hitesh Choudhary is a Teacher by ♥️ and programmer by profession. He
-            is content creator in Youtube and makes videos related to code and
-            tech.
-          </div>
-        </div>
-      </div>
-      <br/>
-      <Footer/>
+      <br />
+      <Footer />
     </div>
   );
 };

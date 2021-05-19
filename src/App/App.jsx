@@ -10,6 +10,7 @@ import Login from "../Login/Login";
 import Payments from "../Payment/Payments";
 import Profile from "../Profile/Profile";
 import SignUp from "../SignUp/SignUp";
+import Fade from "react-reveal/Fade";
 import "./App.css";
 
 function App() {
@@ -18,7 +19,9 @@ function App() {
       <Router>
         <Switch>
           <Route path="/profile/aswinasok">
-            <Profile />
+            <Fade>
+              <Profile />
+            </Fade>
           </Route>
           <Route path="/home">
             <Home />
@@ -36,10 +39,14 @@ function App() {
             <Payments />
           </Route>
           <Route path="/signup">
-            <SignUp />
+            <Fade>
+              <SignUp />
+            </Fade>
           </Route>
           <Route path="/login">
-            <Login />
+            <Fade>
+              <Login />
+            </Fade>
           </Route>
           <Route path="/">
             <Landing />
