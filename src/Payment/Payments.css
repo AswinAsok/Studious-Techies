@@ -44,6 +44,14 @@
   margin-top: 2.25rem;
 }
 
+
+@media screen and (min-width: 480px) {
+  .payments-container {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+}
+
 .purchases {
   background-color: #6effc0;
   color: #2b2d42;
@@ -111,6 +119,7 @@
   border-radius: 8px;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  padding: 0.6rem;
 }
 
 .checkout-details {

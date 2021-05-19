@@ -6,6 +6,7 @@ import Grid from "@material-ui/core/Grid";
 import logo from "../Images/Contact.svg";
 import { Link } from "react-router-dom";
 import "./Contact.css";
+import Footer from "../Footer/Footer";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -69,6 +70,7 @@ const Contact = () => {
           </Grid>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };

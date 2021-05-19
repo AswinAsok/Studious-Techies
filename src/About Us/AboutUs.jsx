@@ -6,6 +6,7 @@ import Grid from "@material-ui/core/Grid";
 import logo from "../Images/About.svg";
 import { Link } from "react-router-dom";
 import "./AboutUs.css";
+import Footer from "../Footer/Footer";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -73,6 +74,8 @@ const AboutUs = () => {
           </Grid>
         </div>
       </div>
+      <br/>
+      <Footer/>
     </div>
   );
 };

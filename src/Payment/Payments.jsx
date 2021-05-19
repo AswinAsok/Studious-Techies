@@ -10,6 +10,7 @@ import Button from "@material-ui/core/Button";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
 import VisibilityOffSharpIcon from "@material-ui/icons/VisibilityOffSharp";
+import Footer from "../Footer/Footer";
 
 import "./Payments.css";
 
@@ -96,6 +97,7 @@ const Payments = () => {
                   <div className="c-name">
                     <div className="cname">React.js</div>
                     <div className="instruct">Instructor: Hitesh</div>
+                    <div className="instruct">Validity: Lifetime</div>
                   </div>
                   <div className="cprice">Rs.699</div>
                 </div>
@@ -107,6 +109,7 @@ const Payments = () => {
                   <div className="c-name">
                     <div className="cname">JavaScript</div>
                     <div className="instruct">Instructor: DevEd</div>
+                    <div className="instruct">Validity: Lifetime</div>
                   </div>
                   <div className="cprice">Rs.599</div>
                 </div>
@@ -118,6 +121,7 @@ const Payments = () => {
                   <div className="c-name">
                     <div className="cname">HTML & CSS</div>
                     <div className="instruct">Instructor: Nikhil</div>
+                    <div className="instruct">Validity: Lifetime</div>
                   </div>
                   <div className="cprice">Rs.299</div>
                 </div>
@@ -169,6 +173,7 @@ const Payments = () => {
           </div>
         </Grid>
       </div>
+      <Footer />
     </div>
   );
 };

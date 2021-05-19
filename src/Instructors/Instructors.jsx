@@ -8,6 +8,7 @@ import Ins1 from "../Images/DevEd.png";
 import Ins2 from "../Images/Nikhil.png";
 import Ins3 from "../Images/Hitesh.png";
 import { Link } from "react-router-dom";
+import Footer from "../Footer/Footer";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -81,6 +82,8 @@ const Instructors = () => {
           </div>
         </div>
       </div>
+      <br/>
+      <Footer/>
     </div>
   );
 };

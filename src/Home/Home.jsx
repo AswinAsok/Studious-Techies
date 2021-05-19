@@ -19,6 +19,7 @@ import e1 from "../Images/Coding Event.png";
 import e2 from "../Images/Event2.jpg";
 
 import "./Home.css";
+import Footer from "../Footer/Footer";
 
 const useStyles = makeStyles((theme) => ({
   root_one: {
@@ -223,6 +224,8 @@ const Home = () => {
           </div>
         </Grid>
       </div>
+      <br/>
+      <Footer/>
     </div>
   );
 };
