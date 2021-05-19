@@ -13,7 +13,12 @@
   border-radius: 15px;
   padding-bottom: 3rem;
   min-height: 60vh;
-  margin-top: 1rem;
+}
+
+@media screen and (min-width: 480px) {
+  .login-box  {
+    margin-top: 2rem;
+  }
 }
 
 .login-header {
