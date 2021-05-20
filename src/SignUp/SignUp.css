@@ -78,6 +78,7 @@
   font-size: 0.75rem;
   justify-content: center;
   align-items: center;
+  letter-spacing: 0.05rem;
   letter-spacing: 0.02rem;
 }
 
@@ -86,7 +87,7 @@
 }
 
 .signup-button{
-    background-color: #2b2d42;
+  background-color: #2b2d42;
     color: #6effc0;;
     border: none;
     width: 9rem;

@@ -74,7 +74,7 @@ const Landing = () => {
         </Grid>
       </div>
       <Fade>
-      <hr className="line-landing" />
+        <hr className="line-landing" />
       </Fade>
       <Fade>
         <div className="sponsers">
@@ -86,6 +86,7 @@ const Landing = () => {
           >
             <div className="stext">Our Sponsers</div>
             <hr className="line-landing1" />
+            <br />
             <div className="slogo">
               <Grid
                 container
@@ -100,6 +101,8 @@ const Landing = () => {
                 <img className="sp-logo" src={s5} alt="" />
                 <img className="sp-logo" src={s6} alt="" />
               </Grid>
+              <br />
+              <br />
             </div>
           </Grid>
         </div>

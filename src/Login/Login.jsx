@@ -52,12 +52,12 @@ const Login = () => {
           <div className="forms">
             <div className="username">
               <div className="label">Username</div>
-              <input value="_aswin_asok_" className="input-field" type="text" />
+              <input value="_aswin_asok_" className="input-fields" type="text" />
             </div>
 
             <div className="password">
               <div className="label">Password</div>
-              <input value="***********" className="input-field" type="text" />
+              <input value="***********" className="input-fields" type="text" />
             </div>
 
             <div className="iamnotrobot">

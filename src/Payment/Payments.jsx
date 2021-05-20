@@ -11,7 +11,7 @@ import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
 import VisibilityOffSharpIcon from "@material-ui/icons/VisibilityOffSharp";
 import Footer from "../Footer/Footer";
-import Fade from "react-reveal/Fade";
+import Slide from 'react-reveal/Slide';
 import "./Payments.css";
 
 const useStyles = makeStyles((theme) => ({
@@ -91,7 +91,7 @@ const Payments = () => {
           justify="space-around"
           alignItems="center"
         >
-          <Fade left>
+          <Slide left>
             <div className="purchases">
               <div className="title">
                 <div>Purchases</div>
@@ -134,8 +134,8 @@ const Payments = () => {
                 </div>
               </div>
             </div>
-          </Fade>
-          <Fade right>
+          </Slide>
+          <Slide right>
             <div className="checkout">
               <div className="title">
                 <div>Checkout</div>
@@ -178,7 +178,7 @@ const Payments = () => {
                 </div>
               </Grid>
             </div>
-          </Fade>
+          </Slide>
         </Grid>
       </div>
       <Footer />

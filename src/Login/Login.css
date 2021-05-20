@@ -50,7 +50,7 @@
   margin-bottom: 0.2rem;
 }
 
-.input-field {
+.input-fields {
   background-color: #2b2d42;
   border: none;
   color: #edf2f4;
@@ -188,7 +188,7 @@
 
 
 .container input:checked ~ .checkmark {
-  background-color: #2b2d42
+  background-color: #2b2d42;
 }
 
 .checkmark:after {

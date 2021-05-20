@@ -49,7 +49,7 @@ const Profile = () => {
               alignItems="center"
             >
               <div className="goback">
-                <Link to="/">
+                <Link to="/home">
                   <img className="goback" src={back} alt="" />
                 </Link>
               </div>

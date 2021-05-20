@@ -10,6 +10,7 @@ import Ins3 from "../Images/Hitesh.png";
 import { Link } from "react-router-dom";
 import Footer from "../Footer/Footer";
 import Fade from "react-reveal/Fade";
+import Slide from 'react-reveal/Slide';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -47,7 +48,7 @@ const Instructors = () => {
       </Fade>
 
       <div className="instructors-container">
-        <Fade left>
+        <Slide left>
           <div className="instructor">
             <div className="insimg">
               <img className="deved-img" src={Ins1} alt="" />
@@ -59,8 +60,8 @@ const Instructors = () => {
               Development all the way to design, 3D and more!
             </div>
           </div>
-        </Fade>
-        <Fade right>
+        </Slide>
+        <Slide right>
           <div className="instructor">
             <div className="insimg">
               <img className="nik-img" src={Ins2} alt="" />
@@ -74,11 +75,11 @@ const Instructors = () => {
               tech industry.
             </div>
           </div>
-        </Fade>
+        </Slide>
       </div>
 
       <div className="instructors-container">
-        <Fade left>
+        <Slide left>
           <div className="instructor">
             <div className="insimg">
               <img className="hit-img" src={Ins3} alt="" />
@@ -90,7 +91,7 @@ const Instructors = () => {
               and tech.
             </div>
           </div>
-        </Fade>
+        </Slide>
       </div>
       <br />
       <Footer />

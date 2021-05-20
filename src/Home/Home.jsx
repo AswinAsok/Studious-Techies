@@ -11,6 +11,7 @@ import Button from "@material-ui/core/Button";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
 import Fade from "react-reveal/Fade";
+import Slide from 'react-reveal/Slide';
 
 import reactlogo from "../Images/React.jpg";
 import jslogo from "../Images/js.png";
@@ -21,6 +22,7 @@ import e2 from "../Images/Event2.jpg";
 
 import "./Home.css";
 import Footer from "../Footer/Footer";
+import { Slider } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   root_one: {
@@ -110,19 +112,19 @@ const Home = () => {
         </Fade>
         <div className="topics">
           <Grid container direction="row" justify="center" alignItems="center">
-            <Fade left>
+            <Slide left>
               <div className="topic">React.js</div>
               <div className="topic">JavaScript</div>
               <div className="topic">Machine Learning</div>
-            </Fade>
-            <Fade right>
+            </Slide>
+            <Slide right>
               <div className="topic">Python</div>
               <div className="topic">Vue.js</div>
               <div className="topic">Ethical Hacking</div>
-            </Fade>
+            </Slide>
           </Grid>
         </div>
-        <Fade>
+        <Fade bottom>
           <hr className="line-home" />
           <div className="latest-heading">Latest Courses</div>
         </Fade>
@@ -130,7 +132,7 @@ const Home = () => {
 
       <div className="courses">
         <Grid container direction="row" justify="center" alignItems="center">
-          <Fade left>
+        <Slide left>
             <div className="course">
               <Card className={classes.root}>
                 <CardMedia
@@ -153,8 +155,8 @@ const Home = () => {
                 </div>
               </Card>
             </div>
-          </Fade>
-          <Fade bottom>
+            </Slide>
+            <Slide bottom>
             <div className="course">
               <Card className={classes.root}>
                 <CardMedia
@@ -177,8 +179,8 @@ const Home = () => {
                 </div>
               </Card>
             </div>
-          </Fade>
-          <Fade right>
+            </Slide>
+            <Slide right>
             <div className="course">
               <Card className={classes.root}>
                 <CardMedia
@@ -201,7 +203,7 @@ const Home = () => {
                 </div>
               </Card>
             </div>
-          </Fade>
+            </Slide>
         </Grid>
       </div>
       <Fade>
@@ -212,7 +214,7 @@ const Home = () => {
       </Fade>
       <div className="courses">
         <Grid container direction="row" justify="center" alignItems="center">
-          <Fade left>
+        <Slide left>
             <div className="course">
               <Card className={classes.root}>
                 <CardMedia className={classes.media} image={e2} />
@@ -228,8 +230,8 @@ const Home = () => {
                 </div>
               </Card>
             </div>
-          </Fade>
-          <Fade right>
+            </Slide>
+            <Slide right>
             <div className="course">
               <Card className={classes.root}>
                 <CardMedia
@@ -248,7 +250,7 @@ const Home = () => {
                 </div>
               </Card>
             </div>
-          </Fade>
+            </Slide>
         </Grid>
       </div>
       <br />
