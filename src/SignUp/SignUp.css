@@ -23,7 +23,7 @@
 }
 
 .signup-header {
-  background-color: #2b2d42;
+  background-color: #3f4152;
   font-size: 1rem;
   padding: 0.5rem;
   font-weight: bold;
@@ -47,8 +47,8 @@
 }
 
 .time{
-  color: #2b2d42;
-  padding-left: 1.5rem;
+  color: #3f4152;
+  padding-left: 1.25rem;
   font-weight: bold;
 }
 
@@ -59,7 +59,7 @@
 }
 
 .label{
-    color: #2b2d42;
+    color: #3f4152;
     font-weight: bold;
     font-size: 0.85rem;
     font-weight: bold;
@@ -67,7 +67,7 @@
 }
 
 .input-field {
-  background-color: #2b2d42;
+  background-color: #3f4152;
   border: none;
   color: #EDF2F4;
   width: 15rem;
@@ -87,7 +87,7 @@
 }
 
 .signup-button{
-  background-color: #2b2d42;
+  background-color: #3f4152;
     color: #6effc0;;
     border: none;
     width: 9rem;
@@ -100,7 +100,7 @@
     text-align: center;
     width: 16rem;
     margin-top: 1rem;
-    color: #2b2d42;
+    color: #3f4152;
     font-size: 0.75rem;
     font-weight: bold;
 }

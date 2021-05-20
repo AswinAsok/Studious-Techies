@@ -1,5 +1,5 @@
 .credit-card {
-  background-color: #2b2d42;
+  background-color: #3f4152;
   margin: 0.5rem;
   border-radius: 8px;
   color: #6effc0;
@@ -54,7 +54,7 @@
 
 .purchases {
   background-color: #6effc0;
-  color: #2b2d42;
+  color: #3f4152;
   font-weight: bold;
   margin: 1rem;
   border-radius: 8px;
@@ -72,12 +72,12 @@
 .line {
   width: 30px;
   height: 0.2rem;
-  background-color: #2b2d42;
+  background-color: #3f4152;
   border: none;
 }
 
 .purchase {
-  background-color: #2b2d42;
+  background-color: #3f4152;
   border-radius: 7px;
   color: #6effc0;
   margin: 1rem;
@@ -114,7 +114,7 @@
 
 .checkout {
   background-color: #6effc0;
-  color: #2b2d42;
+  color: #3f4152;
   font-weight: bold;
   border-radius: 8px;
   margin-top: 3rem;
@@ -123,7 +123,7 @@
 }
 
 .checkout-details {
-  background-color: #2b2d42;
+  background-color: #3f4152;
   border-radius: 7px;
   color: #6effc0;
   margin: 1rem;

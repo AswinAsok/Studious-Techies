@@ -22,7 +22,7 @@
 }
 
 .login-header {
-  background-color: #2b2d42;
+  background-color: #3f4152;
   font-size: 1rem;
   padding: 0.5rem;
   font-weight: bold;
@@ -42,8 +42,8 @@
   justify-content: center;
 }
 
-.label {
-  color: #2b2d42;
+.labellog {
+  color: #3f4152;
   font-weight: bold;
   font-size: 0.85rem;
   font-weight: bold;
@@ -51,7 +51,7 @@
 }
 
 .input-fields {
-  background-color: #2b2d42;
+  background-color: #3f4152;
   border: none;
   color: #edf2f4;
   width: 15rem;
@@ -70,7 +70,7 @@
 }
 
 .login-button {
-  background-color: #2b2d42;
+  background-color: #3f4152;
   color: #6effc0;
   border: none;
   width: 9rem;
@@ -85,7 +85,7 @@
   color: #2b2d42;
   font-size: 0.75rem;
   font-weight: bold;
-  margin-top: 2rem;
+  margin-top: 0.5rem;
 }
 
 .general-textone {
@@ -94,7 +94,6 @@
 
 .general-texttwo {
   margin-right: 0.8rem;
-  text-decoration: underline;
 }
 
 .login-options {
@@ -116,7 +115,7 @@
   margin-top: 3rem;
   content: " ";
   display: block;
-  border-bottom: 3px solid #2b2d42;
+  border-bottom: 3px solid #3f4152;
   margin-bottom: 1rem;
 }
 
@@ -130,7 +129,7 @@
 }
 
 .iamnotrobot{
-  background-color: #2b2d42;
+  background-color: #3f4152;;
   color: #6effc0;
   display: flex;
   flex-direction: row;
@@ -188,7 +187,7 @@
 
 
 .container input:checked ~ .checkmark {
-  background-color: #2b2d42;
+  background-color: #3f4152;;
 }
 
 .checkmark:after {

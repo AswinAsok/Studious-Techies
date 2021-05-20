@@ -61,7 +61,7 @@ const Contact = () => {
                 Executives.
                 <br />
                 Being a completely <b>online platform</b>, Studious Techies
-                currently don't have any offine offices.
+                currently don't have any offline offices.
                 <br />
                 <br />
                 <b>Executive</b>

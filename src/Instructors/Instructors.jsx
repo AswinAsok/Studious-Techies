@@ -10,7 +10,8 @@ import Ins3 from "../Images/Hitesh.png";
 import { Link } from "react-router-dom";
 import Footer from "../Footer/Footer";
 import Fade from "react-reveal/Fade";
-import Slide from 'react-reveal/Slide';
+import Slide from "react-reveal/Slide";
+import yt from "../Images/yt.png";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -52,7 +53,12 @@ const Instructors = () => {
           <div className="instructor">
             <div className="insimg">
               <img className="deved-img" src={Ins1} alt="" />
-              <div className="insname">Dev Ed</div>
+              <div>
+                <div className="insname">Dev Ed</div>
+                <a href="https://www.youtube.com/channel/UClb90NQQcskPUGDIXsQEz5Q">
+                  <img className="ytlogo" src={yt} alt="" />
+                </a>
+              </div>
             </div>
             <div className="instext">
               Dev Ed is a multimedia content creator with over 200k subscribers
@@ -65,7 +71,12 @@ const Instructors = () => {
           <div className="instructor">
             <div className="insimg">
               <img className="nik-img" src={Ins2} alt="" />
-              <div className="insname">Nikhil Kilivayil</div>
+              <div>
+                <div className="insname">Nikhil Kilivayil</div>
+                <a href="https://www.youtube.com/channel/UCoGHeFY7jE2OB_TJS_87MOA">
+                  <img className="ytlogo" src={yt} alt="" />
+                </a>
+              </div>
             </div>
             <div className="instext">
               Nikhil is a Software Engineer turned Entrepreneur who has 9+ years
@@ -83,7 +94,12 @@ const Instructors = () => {
           <div className="instructor">
             <div className="insimg">
               <img className="hit-img" src={Ins3} alt="" />
-              <div className="insname">Hitesh Choudhary</div>
+              <div>
+                <div className="insname">Hitesh Choudhary</div>
+                <a href="https://www.youtube.com/user/hiteshitube">
+                  <img className="ytlogo" src={yt} alt="" />
+                </a>
+              </div>
             </div>
             <div className="instext">
               Hitesh Choudhary is a Teacher by ♥️ and programmer by profession.

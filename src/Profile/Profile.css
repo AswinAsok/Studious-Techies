@@ -21,7 +21,7 @@
   }
 
 .profile-header {
-  background-color: #2b2d42;
+  background-color: #3f4152;
   font-size: 1rem;
   padding: 0.5rem;
   font-weight: bold;
@@ -33,7 +33,7 @@
 }
 
 .details {
-  color: #2b2d42;
+  color: #3f4152;
   font-weight: bold;
 }
 
@@ -47,7 +47,7 @@
 
 .pro-line {
   width: 17rem;
-  background-color: #2b2d42;
+  background-color: #3f4152;
   height: 0.15rem;
   border: none;
   margin-top: rem;
@@ -55,7 +55,7 @@
 
 .pro1-line {
   width: 2rem;
-  background-color: #2b2d42;
+  background-color: #3f4152;
   height: 0.15rem;
   border: none;
   margin-top: rem;
@@ -73,7 +73,7 @@
 /* -----------Saved Cards--------- */
 
 .procredit-card {
-  background-color: #2b2d42;
+  background-color: #3f4152;
   margin: 0.5rem;
   border-radius: 8px;
   color: #6effc0;
@@ -108,7 +108,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #2b2d42;
+    background-color: #3f4152;
     color: #6EFFC0;
     border-radius: 10px;
     width: 7rem;

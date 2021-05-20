@@ -51,12 +51,12 @@ const Login = () => {
 
           <div className="forms">
             <div className="username">
-              <div className="label">Username</div>
+              <div className="labellog">Username</div>
               <input value="_aswin_asok_" className="input-fields" type="text" />
             </div>
 
             <div className="password">
-              <div className="label">Password</div>
+              <div className="labellog">Password</div>
               <input value="***********" className="input-fields" type="text" />
             </div>
 
@@ -69,14 +69,6 @@ const Login = () => {
               </div>
               <div className="text-robot">I am not a robot</div>
             </div>
-            
-
-            <div className="sbtn">
-              <Link to="/home">
-                <button className="login-button">Login</button>
-              </Link>
-            </div>
-
             <div className="general">
               <Grid
                 container
@@ -84,12 +76,20 @@ const Login = () => {
                 justify="center"
                 alignItems="center"
               >
-                {/* <div className="general-texttwo">Forgot Password ?</div>
+                <div className="general-texttwo">Forgot Password ?</div>
                 <Link to="/signup">
                   <div className="general-textone">Don't have a Account?</div>
-                </Link> */}
+                </Link>
               </Grid>
             </div>
+
+            <div className="sbtn">
+              <Link to="/home">
+                <button className="login-button">Login</button>
+              </Link>
+            </div>
+
+           
           </div>
           <div className="option-text"></div>
           <div className="login-options">

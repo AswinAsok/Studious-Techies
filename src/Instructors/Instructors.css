@@ -27,6 +27,11 @@
   border: none;
 }
 
+.ytlogo{
+  width: 2rem;
+  height: 2rem;
+}
+
 .headingins{
   display: flex;
   justify-content: center;
@@ -38,9 +43,8 @@
 }
 
 .insname{
-  color: #2B2D42;
+  color: #3f4152;
   font-weight: bold;
-  margin-bottom: 1rem;
 }
 
 .insimg {
